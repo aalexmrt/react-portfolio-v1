@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Invoices generator",
+    "description": "Django web application to generate and mail invoices.",
+    "imgURL": "https://github.com/aalexmrt/django-invoices-generator/blob/main/docs/gifs/add_invoice.gif?raw=true",
+    "techStack": ["django", "sql", "bootstrap"],
+    "gitURL": "https://github.com/aalexmrt/django-invoices-generator/"
+  },
+  {
+    "title": "Tic tac toe",
+    "description": "This project is a simple implementation of the classic tic-tac-toe game built using React.",
+    "imgURL": "https://github.com/aalexmrt/tic-tac-toe/blob/main/docs/gifs/tic-tac-toe-demo.gif?raw=true",
+    "techStack": ["django", "sql", "bootstrap"],
+    "gitURL": "https://github.com/aalexmrt/tic-tac-toe/"
+  },
+  {
+    "title": "Invoices generator",
+    "description": "Lorem ipsum",
+    "imgURL": "add_invoice.gif",
+    "techStack": ["django", "sql", "bootstrap"],
+    "gitURL": ""
+  },
+  {
+    "title": "Django invoices generator",
+    "description": "Lorem ipsum",
+    "imgURL": "add_invoice.gif",
+    "techStack": ["django", "sql", "bootstrap"],
+    "gitURL": ""
+  }
+]
