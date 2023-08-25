@@ -1,18 +1,21 @@
-import './index.css'
-
-import { Intro } from 'src/components/Intro'
+import Intro from 'src/components/Intro'
 import userInfo from 'src/data/userInfo.json'
-import { ProjectList } from 'src/components/ProjectList'
-
+import Projects from 'src/components/Projects'
+import ContactForm from 'src/components/ContactForm'
+import About from 'src/components/About'
 export const Main = () => {
-  const { title, description, skillsImg } = userInfo
+  const { greeting, title, description, skillsImg } = userInfo
 
   return (
-    <main className='mx-auto'>
+    <>
 
-      <Intro title={title} description={description} skillsImgList={skillsImg}></Intro>
-      <ProjectList />
+      <Intro greeting={greeting} title={title} description={description} skillsImgList={skillsImg}></Intro>
+      <About></About>
+      <Projects />
+      <ContactForm />
+    </>
 
-    </main>
   )
 }
+
+export default Main

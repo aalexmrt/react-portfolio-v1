@@ -1,7 +1,7 @@
 [
   {
     "title": "Invoices generator",
-    "description": "Django web application to generate and mail invoices.",
+    "description": "Django web application to generate and mail invoices. ",
     "imgURL": "https://github.com/aalexmrt/django-invoices-generator/blob/main/docs/gifs/add_invoice.gif?raw=true",
     "techStack": ["django", "sql", "bootstrap"],
     "gitURL": "https://github.com/aalexmrt/django-invoices-generator/"
@@ -14,16 +14,16 @@
     "gitURL": "https://github.com/aalexmrt/tic-tac-toe/"
   },
   {
-    "title": "Invoices generator",
-    "description": "Lorem ipsum",
-    "imgURL": "add_invoice.gif",
+    "title": "Simon game",
+    "description": "This is a simple implementation of the classic Simon Game.",
+    "imgURL": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
     "techStack": ["django", "sql", "bootstrap"],
-    "gitURL": ""
+    "gitURL": "https://github.com/aalexmrt/simon-game-js"
   },
   {
-    "title": "Django invoices generator",
-    "description": "Lorem ipsum",
-    "imgURL": "add_invoice.gif",
+    "title": "Pokemon API",
+    "description": "This is a simple implementation of the classic Simon Game.",
+    "imgURL": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
     "techStack": ["django", "sql", "bootstrap"],
     "gitURL": ""
   }

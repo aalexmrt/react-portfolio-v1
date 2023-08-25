@@ -1,6 +1,7 @@
 {
+  "greeting": " Hi, I'm Alex Martinez",
   "title": "Fullstack developer ",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit quis orci non blandit. Suspendisse posuere vel tortor a convallis. Donec sit amet commodo enim. Nam et enim consectetur, pulvinar quam at, tincidunt dolor. Sed hendrerit posuere neque. Vestibulum accumsan sapien eu velit sollicitudin, sed malesuada libero sagittis.",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit quis orci non blandit. Suspendisse posuere vel tortor a convallis.",
   "skillsImg": [
     "bash/bash-original.svg",
     "tailwindcss/tailwindcss-plain.svg",
