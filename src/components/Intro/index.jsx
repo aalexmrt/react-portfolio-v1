@@ -1,26 +1,26 @@
-import workingEmoji from 'src/assets/working_emoji.png'
-import greetingEmoji from 'src/assets/myself_emoji.png'
+import workingEmoji from 'src/assets/myself_emoji.png'
 const iconsSource = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons'
 export const Intro = ({ greeting, title, description, skillsImgList }) => {
   return (
-    <section className="w-100 h-[87vh] bg-neutral-50 items-start pl-16 pr-16 pt-32 gap-8 flex flex-wrap">
-      <div className=" bg-neutral-100 basis-6/12 ">
-        <h1 className="flex inline-flex items-baseline bg-neutral-250 font-black text-5xl mt-6 mb-4"><img className="w-14 mr-2 self-center" src={greetingEmoji}></img>Hi, my name is <br></br>Alex Martinez</h1>
-        <h2 className=" tracking-tight font-black text-3xl mt-6 mb-4">{title}</h2>
-        <p className="">{description}</p>
-        <div className='flex basis-full mt-12 gap-2 justify-center flex-wrap sm:order-2 md:order-2'>
+    <section id="home" className=" w-100 md:h-[90vh]  items-start ml-16 mr-16 pt-40 flex flex-wrap">
+      <div className=" basis-2/4">
+        {/* <h2 className=" tracking-tight font-black text-3xl mt-6 mb-4">{title}</h2> */}
+        <h1 className="flex font-black text-8xl pb-12 tracking-tight min-w-min">Full Stack Developer</h1>
+        <p className="text-lg pb-8">{description}</p>
+        <div className='flex basis-full gap-4 items-start flex-wrap'>
           {skillsImgList
             ? skillsImgList.map((skill, key) => (
-              <div key={key} className='overflow-hidden    rounded-full w-16 p-1 '>
-                <img src={`${iconsSource}/${skill}`} />
+              <div key={key} className='flex overflow-hidden justify-center bg-[#e3e5e609] shadow-lg rounded-full w-12 h-12'>
+                <img className="w-8/12 " src={`${iconsSource}/${skill}`} />
               </div>
             ))
-            : console.log(skillsImgList)}
+            : console.log('Error loading skills...')}
         </div>
       </div>
+      <div className='flex -mt-8 pl-40 basis-2/4'>
+        <img className="mt-0 w-8/12 " src={workingEmoji}></img>
 
-      <img className="w-60" src={workingEmoji}></img>
-
+      </div>
     </section>
   )
 }

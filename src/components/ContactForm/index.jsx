@@ -1,33 +1,47 @@
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+
 export const ContactForm = () => {
-  // TODO https://www.emailjs.com/docs/examples/reactjs/
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm(import.meta.env.VITE_EMAIL_JS_SERVICE_ID, import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY)
+      .then((result) => {
+        console.log(result)
+      }, (error) => {
+        console.log(error)
+      })
+  }
+
   return (
-    <section className="flex h-[100vh] items-center justify-center p-12">
-      <div className="mx-auto w-full max-w-[550px] bg-white">
-        <h1 className='font-bold font-sans subpixel-antialiased w-full text-center text-4xl mb-12'>
+    <section id="contact" className="flex flex-wrap items-start h-[90vh] ml-16 mr-16">
+      <div className="basis-1/2">
+        <h1 className='font-bold text-4xl mt-[18px] mb-4'>
         Contact
         </h1>
-        <form action="https://formbold.com/s/FORM_ID" method="POST">
+        <form ref={form} onSubmit={sendEmail}>
           <div className="mb-5">
             <label htmlFor="name" className="mb-3 block text-base font-medium text-[#07074D]">
                     Full Name
             </label>
-            <input type="text" name="name" id="name" placeholder="Full Name"
+            <input type="text" name="user_name" id="name" placeholder="Full Name"
               className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
           </div>
           <div className="mb-5">
             <label htmlFor="email" className="mb-3 block text-base font-medium text-[#07074D]">
                     Email Address
             </label>
-            <input type="email" name="email" id="email" placeholder="example@domain.com"
+            <input type="email" name="user_email" id="email" placeholder="example@domain.com"
               className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
           </div>
-          <div className="mb-5">
+          {/* <div className="mb-5">
             <label htmlFor="subject" className="mb-3 block text-base font-medium text-[#07074D]">
                     Subject
             </label>
             <input type="text" name="subject" id="subject" placeholder="Enter your subject"
               className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
-          </div>
+          </div> */}
           <div className="mb-5">
             <label htmlFor="message" className="mb-3 block text-base font-medium text-[#07074D]">
                     Message
