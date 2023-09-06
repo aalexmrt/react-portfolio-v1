@@ -22,10 +22,6 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -33,4 +29,11 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }

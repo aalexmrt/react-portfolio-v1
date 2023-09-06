@@ -10,13 +10,13 @@ export const Projects = () => {
   }, [setProjects])
 
   return (
-    <section id="projects" className="w-100 items-start ml-16 mr-16 flex flex-wrap">
-      <h1 className='font-bold text-4xl mt-[18px] mb-4'>Projects</h1>
-      <div className="flex flex-wrap gap-8">
+    <section id="projects" className="grid gap-5 overflow-hidden mx-8 md:mx-16 mt-[4.3rem]">
+      <h1 className='font-bold text-3xl'>Projects</h1>
+      <div className="grid gap-3">
         {projects
           ? projects.map((item, key) => {
-            const { name, description, imgRef, gitUrl } = item
-            return <ProjectDetail key={key} name={name} description={description} imgRef={imgRef} gitUrl={gitUrl}></ProjectDetail>
+            const { name, description, imgRef, gitUrl, techStack } = item
+            return <ProjectDetail key={key} name={name} description={description} imgRef={imgRef} gitUrl={gitUrl} techStack={techStack}></ProjectDetail>
           })
           : null}
       </div>

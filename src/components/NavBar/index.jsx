@@ -2,26 +2,39 @@ import { Link } from "react-router-dom"
 import { Fragment } from "react"
 import { Capitalize } from "src/utils"
 
-export const NavBar = ({ SECTIONS }) => {
-  return (
-    <section className='flex h-[10vh] justify-between items-center ml-16 mr-16 pt-[1.5px] align-baseline'>
-      <a href="#home"><h3 className='text-2xl font-black tracking-tighter'>AM</h3></a>
-      <nav className='p-2 m-2 px-8 border bg-[#fffcfc] rounded-full shadow-sm drop-shadow-sm text-[12px] font-bold'>
-        <ul className="w-max-content flex justify-between gap-4">
-          {SECTIONS
-            ? SECTIONS.map((item, index) => {
-              return <Fragment key={index}>
-                <li className="hover:drop-shadow-xl">
-                  <Link to ={`#${item}`}>{Capitalize(item)}</Link>
-                </li>
-                {SECTIONS.length - 1 !== index ? <span className='h-[24px] w-[1px] bg-neutral-400'></span> : null}
-              </Fragment>
-            })
-            : null}
-        </ul>
+import "./index.css"
 
-      </nav>
-      <div className='text-[30px] gap-3 flex flex-row align-center justify-center items-center decoration-none  hover:text-bold '>
+export const NavBar = ({ SECTIONS }) => {
+  function toggleResponsiveMenu () {
+    const menuToggle = document.querySelector(".menu-toggle")
+    const nav = document.querySelector(".nav")
+    menuToggle.classList.toggle("is-active")
+    nav.classList.toggle("mobile-nav")
+  }
+
+  return (
+
+    <nav className='justify-end flex md:justify-between navbar px-8 md:px-0 md:mx-16 text-[0.8em] '>
+      <a href="#home"><h3 className='hidden md:block text-2xl font-black tracking-tighter'>AM</h3></a>
+
+      <div onClick={toggleResponsiveMenu} className="menu-toggle" id="mobile-menu">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+      <ul className="md:flex md:justify-between md:gap-4 p-1 md:px-5 font-medium nav md:bg-[#fffcfc] md:border rounded-full shadow-sm drop-shadow-sm">
+        {SECTIONS
+          ? SECTIONS.map((item, index) => {
+            return <Fragment key={index}>
+              <li onClick={toggleResponsiveMenu} className="hover:drop-shadow-xl">
+                <Link to ={`#${item}`}>{Capitalize(item)}</Link>
+              </li>
+              {SECTIONS.length - 1 !== index ? <span className='h-5 self-center w-[1px] bg-neutral-400'></span> : null}
+            </Fragment>
+          })
+          : null}
+      </ul>
+      <div className='hidden md:flex text-[30px] gap-3 flex-row align-center justify-center items-center decoration-none  hover:text-bold '>
         <a href='https://www.linkedin.com/in/alexmartinez598/' target="_blank" rel="noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" strokeWidth="0" width="1em" height="1em" viewBox="0 0 24 24">
             <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"></path>
@@ -33,7 +46,9 @@ export const NavBar = ({ SECTIONS }) => {
           </svg>
         </a>
       </div>
-    </section>
+    </nav>
+
+  // </section>
 
   )
 }
