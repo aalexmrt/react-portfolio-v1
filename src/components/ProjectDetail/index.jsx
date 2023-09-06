@@ -4,17 +4,17 @@ export const ProjectDetail = ({ name, description, imgRef, techStack, gitUrl }) 
   const { tech_stack: skills } = techStack
   return (
     <div className="grid">
-      <h4 className="text-2xl font-bold pb-4">{name}</h4>
-      <img className="border-solid" src={imgRef} />
-      <p className="text-base md:text-lg pb-2">{description}</p>
-      <div className="flex flex-wrap gap-1 pb-8">
-        <div className="flex items-baseline gap-1">
+      <h4 className="text-3xl font-bold tracking-tight mt-6">{name}</h4>
+      <img className="border-2 rounded-lg border-[#b4b4b4] mt-6" src={imgRef} />
+      <p className="text-base md:text-lg mt-4">{description}</p>
+      <div className="flex flex-wrap gap-x-2 mt-4">
+        <div className="flex items-baseline gap-1 bg-[#dbdbdb3d] rounded-full px-3 py-1">
           <img className="h-4 w-4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></img>
-          <span className="text-base md:text-lg">Python</span>
+          <p className="text-base md:text-lg">Python</p>
         </div>
-        <div className="flex items-baseline gap-1">
+        <div className="flex items-baseline gap-1 bg-[#dbdbdb3d] rounded-full px-3 py-1">
           <img className="h-4 w-4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"></img>
-          <span className="text-base md:text-lg">Javascript</span>
+          <p className="text-base md:text-lg">Javascript</p>
         </div>
         {/* {skills
           ? skills.map((item, key) => {

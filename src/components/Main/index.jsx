@@ -11,7 +11,7 @@ export const Main = () => {
       <Home greeting={greeting} title={title} description={description} skillsImgList={skillsImg}></Home>
       <About></About>
       <Projects></Projects>
-      {/* <ContactForm />   */}
+      <ContactForm />
     </main>
 
   )

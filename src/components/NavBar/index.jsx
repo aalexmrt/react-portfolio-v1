@@ -14,15 +14,15 @@ export const NavBar = ({ SECTIONS }) => {
 
   return (
 
-    <nav className='justify-end flex md:justify-between navbar px-8 md:px-0 md:mx-16 text-[0.8em] '>
-      <a href="#home"><h3 className='hidden md:block text-2xl font-black tracking-tighter'>AM</h3></a>
+    <nav className='flex justify-between items-center navbar px-8 md:px-0 md:mx-16 text-[0.8em] '>
+      <a href="#home"><h3 className='md:block text-2xl font-black tracking-tighter'>AM</h3></a>
 
       <div onClick={toggleResponsiveMenu} className="menu-toggle" id="mobile-menu">
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
-      <ul className="md:flex md:justify-between md:gap-4 p-1 md:px-5 font-medium nav md:bg-[#fffcfc] md:border rounded-full shadow-sm drop-shadow-sm">
+      <ul className="md:flex md:justify-between md:gap-4 p-1 md:px-5 font-medium nav md:bg-[#fffcfc] md:border-2 rounded-full shadow-sm drop-shadow-sm">
         {SECTIONS
           ? SECTIONS.map((item, index) => {
             return <Fragment key={index}>

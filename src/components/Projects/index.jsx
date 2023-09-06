@@ -11,7 +11,7 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="grid gap-5 overflow-hidden mx-8 md:mx-16 mt-[4.3rem]">
-      <h1 className='font-bold text-3xl'>Projects</h1>
+      <h1 className='font-bold text-5xl mt-8 tracking-tight'>Projects</h1>
       <div className="grid gap-3">
         {projects
           ? projects.map((item, key) => {

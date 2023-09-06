@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom"
 import ScrollToAnchor from "./components/ScrollToAnchor"
 import { useEffect, useState } from "react"
 import getProjects from "./services/getProjects"
+import Footer from "./components/Footer"
 
 function App () {
   return (
@@ -12,7 +13,7 @@ function App () {
       <ScrollToAnchor />
       <Header></Header>
       <Main></Main>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </BrowserRouter>
   )
 }
