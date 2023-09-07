@@ -5,7 +5,7 @@ const iconsSource = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons"
 export const Intro = ({ greeting, title, description, skillsImgList }) => {
   return (
 
-    <section id="home" className="grid overflow-hidden md:grid-cols-home md:grid-rows-3 md:grid-flow-col gap-1 mx-8 md:mx-16 mt-[4.3rem]">
+    <section id="home" className="grid md:grid-cols-home md:grid-rows-3 md:grid-flow-col gap-1 mx-8 md:mx-16 mt-[4.3rem]">
       {/* <h1 className="basis-full font-black text-center text-2xl -mt-32">👷‍♂️ under construction 🚧</h1> */}
 
       <h1 className="font-black text-6xl antialiased  tracking-tighter min-w-min mt-8 ">Full Stack <br></br> Developer </h1>
