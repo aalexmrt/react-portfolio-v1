@@ -31,7 +31,7 @@ export const NavBar = ({ navSections }) => {
               <li onClick={toggleResponsiveMenu} className="hover:drop-shadow-xl">
                 <NavLink to ={section.route}>{section.name}</NavLink>
               </li>
-              {navSections.length - 1 !== index ? <span className='h-5 self-center w-[1px] bg-neutral-400'></span> : null}
+              {navSections.length - 1 !== index ? <span className='hidden md:block h-5 self-center w-[1px] bg-neutral-400'></span> : null}
 
             </Fragment>
           })
