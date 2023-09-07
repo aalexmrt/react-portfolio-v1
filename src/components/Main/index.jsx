@@ -1,8 +1,8 @@
 import Home from "src/components/Home"
 import userInfo from "src/data/userInfo.json"
 import ContactForm from "src/components/ContactForm"
-import About from "src/components/About"
-import Projects from "../Projects"
+import About from "src/components/AboutMe"
+import Projects from "src/components/ProjectList"
 export const Main = () => {
   const { greeting, title, description, skillsImg } = userInfo
 

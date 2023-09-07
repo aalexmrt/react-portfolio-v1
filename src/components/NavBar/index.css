@@ -1,3 +1,6 @@
+.active {
+  @apply font-bold underline;
+}
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
@@ -116,7 +119,7 @@
     height: min-content;
     top: 2.7em;
     left: 0;
-    background-color: #aba9a9;
+    background-color: #ffffff;
     width: 100svw;
     height: calc(100vh - 55px);
     transform: translate(-101%);
@@ -126,6 +129,8 @@
     order: 5;
     gap: 0;
     padding: 0;
+    padding-left: 1rem;
+    padding-top: 1rem;
     border-radius: 0;
   }
 

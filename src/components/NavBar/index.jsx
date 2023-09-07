@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { Fragment } from "react"
 import { Capitalize } from "src/utils"
 
 import "./index.css"
 
-export const NavBar = ({ SECTIONS }) => {
+export const NavBar = ({ navSections }) => {
+  console.log(navSections)
   function toggleResponsiveMenu () {
     const menuToggle = document.querySelector(".menu-toggle")
     const nav = document.querySelector(".nav")
@@ -15,7 +16,7 @@ export const NavBar = ({ SECTIONS }) => {
   return (
 
     <nav className='flex justify-between items-center navbar px-8 md:px-0 md:mx-16 text-[0.8em] '>
-      <a href="#home"><h3 className='md:block text-2xl font-black tracking-tighter'>AM</h3></a>
+      <NavLink className={({ isActive }) => (isActive ? "null" : "null")} to="/"><h3 className='md:block text-2xl font-black tracking-tighter'>AM</h3></NavLink>
 
       <div onClick={toggleResponsiveMenu} className="menu-toggle" id="mobile-menu">
         <span className="bar"></span>
@@ -23,15 +24,18 @@ export const NavBar = ({ SECTIONS }) => {
         <span className="bar"></span>
       </div>
       <ul className="md:flex md:justify-between md:gap-4 p-1 md:px-5 font-medium nav md:bg-[#fffcfc] md:border-2 rounded-full shadow-sm drop-shadow-sm">
-        {SECTIONS
-          ? SECTIONS.map((item, index) => {
+        {navSections
+          ? navSections.map((section, index) => {
+            console.log(section)
             return <Fragment key={index}>
               <li onClick={toggleResponsiveMenu} className="hover:drop-shadow-xl">
-                <Link to ={`#${item}`}>{Capitalize(item)}</Link>
+                <NavLink to ={section.route}>{section.name}</NavLink>
               </li>
-              {SECTIONS.length - 1 !== index ? <span className='h-5 self-center w-[1px] bg-neutral-400'></span> : null}
+              {navSections.length - 1 !== index ? <span className='h-5 self-center w-[1px] bg-neutral-400'></span> : null}
+
             </Fragment>
           })
+
           : null}
       </ul>
       <div className='hidden md:flex text-[30px] gap-3 flex-row align-center justify-center items-center decoration-none  hover:text-bold '>
