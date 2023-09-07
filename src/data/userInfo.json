@@ -1,17 +1,47 @@
 {
   "greeting": " Hi, I'm Alex Martinez",
-  "title": "Fullstack developer ",
+  "title": "Full Stack Developer ",
   "description": "I'm Alex Martinez, a passionate fullstack developer. I'm interested on building web apps and learn new trending tech stack.",
-  "skillsImg": [
-    "bash/bash-original.svg",
-    "tailwindcss/tailwindcss-plain.svg",
-    "react/react-original.svg",
-    "nodejs/nodejs-original.svg",
-    "python/python-original.svg",
-    "bash/bash-original.svg",
-    "tailwindcss/tailwindcss-plain.svg",
-    "react/react-original.svg",
-    "react/react-original.svg",
-    "tailwindcss/tailwindcss-plain.svg"
+  "skills": [
+    {
+      "icon": "react/react-original.svg",
+      "linkInfo": "https://react.dev/"
+    },
+    {
+      "icon": "tailwindcss/tailwindcss-plain.svg",
+      "linkInfo": "https://tailwindcss.com/"
+    },
+    {
+      "icon": "nodejs/nodejs-original.svg",
+      "linkInfo": "https://nodejs.org/en/about"
+    },
+    {
+      "icon": "bash/bash-original.svg",
+      "linkInfo": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "icon": "bash/bash-original.svg",
+      "linkInfo": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "icon": "bash/bash-original.svg",
+      "linkInfo": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "icon": "bash/bash-original.svg",
+      "linkInfo": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "icon": "bash/bash-original.svg",
+      "linkInfo": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "icon": "bash/bash-original.svg",
+      "linkInfo": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "icon": "bash/bash-original.svg",
+      "linkInfo": "https://www.gnu.org/software/bash/"
+    }
   ]
 }

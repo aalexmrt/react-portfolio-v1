@@ -8,6 +8,9 @@ export default {
     extend: {
       gridTemplateColumns: {
         home: "2fr 1fr"
+      },
+      gridTemplateRows: {
+        home: "1fr min-content 1fr"
       }
     }
   },
