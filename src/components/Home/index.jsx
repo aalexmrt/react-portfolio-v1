@@ -17,7 +17,7 @@ export const Home = ({ greeting, title, description, skills }) => {
         {skills
           ? skills.map((skill, key) => (
             <div key={key} className='flex overflow-hidden justify-center bg-[#e3e5e67e] shadow-lg drop-shadow-lg rounded-full w-16 h-16 sm:w-[3.4rem] sm:h-[3.4rem] md:w-[3.5rem] md:h-[3.5rem] xl:w-[4rem] xl:h-[4rem]'>
-              <a target="_blank" className="flex justify-center w-[82%] md:w-[70%]" href={skill.linkInfo} rel="noreferrer"><img className="w-[90%]" src={`${iconsSource}/${skill.icon}`} /></a>
+              <a target="_blank" className="flex justify-center w-[82%] md:w-[70%]" href={skill.linkInfo} rel="noreferrer"><img className="w-[76%] lg:w-[90%]" src={`${iconsSource}/${skill.icon}`} /></a>
             </div>
           ))
           : console.log("Error loading skills...")}
