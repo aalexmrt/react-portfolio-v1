@@ -4,44 +4,44 @@
   "description": "I'm Alex Martinez, a passionate fullstack developer. I'm interested on building web apps and learn new trending tech stack.",
   "skills": [
     {
-      "icon": "react/react-original.svg",
+      "icon": "react/react-original-wordmark.svg",
       "linkInfo": "https://react.dev/"
     },
     {
-      "icon": "tailwindcss/tailwindcss-plain.svg",
+      "icon": "javascript/javascript-plain.svg",
+      "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "icon": "typescript/typescript-plain.svg",
+      "linkInfo": "https://www.typescriptlang.org/"
+    },
+    {
+      "icon": "tailwindcss/tailwindcss-plain.svg  ",
       "linkInfo": "https://tailwindcss.com/"
     },
     {
-      "icon": "nodejs/nodejs-original.svg",
-      "linkInfo": "https://nodejs.org/en/about"
+      "icon": "nodejs/nodejs-plain.svg",
+      "linkInfo": "https://nodejs.org/en"
     },
     {
-      "icon": "bash/bash-original.svg",
+      "icon": "python/python-original-wordmark.svg",
+      "linkInfo": "python/python-original-wordmark.svg"
+    },
+    {
+      "icon": "git/git-plain-wordmark.svg",
+      "linkInfo": "git/git-plain-wordmark.svg"
+    },
+    {
+      "icon": "docker/docker-plain-wordmark.svg",
       "linkInfo": "https://www.gnu.org/software/bash/"
     },
     {
-      "icon": "bash/bash-original.svg",
-      "linkInfo": "https://www.gnu.org/software/bash/"
+      "icon": "jquery/jquery-plain-wordmark.svg",
+      "linkInfo": "https://jquery.com/"
     },
     {
-      "icon": "bash/bash-original.svg",
-      "linkInfo": "https://www.gnu.org/software/bash/"
-    },
-    {
-      "icon": "bash/bash-original.svg",
-      "linkInfo": "https://www.gnu.org/software/bash/"
-    },
-    {
-      "icon": "bash/bash-original.svg",
-      "linkInfo": "https://www.gnu.org/software/bash/"
-    },
-    {
-      "icon": "bash/bash-original.svg",
-      "linkInfo": "https://www.gnu.org/software/bash/"
-    },
-    {
-      "icon": "bash/bash-original.svg",
-      "linkInfo": "https://www.gnu.org/software/bash/"
+      "icon": "bootstrap/bootstrap-plain.svg",
+      "linkInfo": "https://getbootstrap.com/"
     }
   ]
 }

@@ -1,10 +1,10 @@
 import profileImg from "src/assets/profile.jpeg"
 const AboutMe = () => {
   return (
-    <section id="about" className="grid gap-1 mx-8 md:mx-16 mt-[4.3rem]">
+    <section id="about" className="grid gap-1 mx-8 md:mx-16 mt-[4.3rem] ">
 
       <h1 className="font-bold text-5xl mt-8 tracking-tight">About me</h1>
-      <div className="md:grid md:grid-cols-2">
+      <div className="md:grid md:grid-cols-2 lg:mt-8">
         <div className="self-center !overflow-hidden object-cover rounded-full w-[21rem] h-[21rem] border-[0.4rem] border-[#cac9c9] shadow-xl drop-shadow-sm mt-10">
           <img
           // className="inline mr-2 rounded-full -translate-y-14 "
