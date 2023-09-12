@@ -17,15 +17,17 @@ const AboutMe = () => {
           />
         </div>
         <p className="md:text-1xl md:align-basealine mt-7 text-lg  lg:text-2xl xl:mt-0">
-          Lorem ipsum dolor sit amet,{" "}
-          <strong>consectetur adipiscing elit.</strong> Duis ultricies lorem id
-          turpis tincidunt sollicitudin. Vivamus finibus magna vitae purus
-          vehicula rutrum. <strong>Nullam in sem nisi.</strong> Phasellus
-          suscipit ultricies purus, quis convallis lectus egestas sed. Phasellus
-          lorem velit, commodo eu tellus a, congue imperdiet{" "}
-          <strong>massa. Nam nulla turpis,</strong> vestibulum non nunc vel,
-          fermentum consequat purus. Mauris in sem vel diam lacinia ultricies ut
-          a enim.
+          Hello! I{"'"}m Alex Martinez, a <strong>web developer</strong> who
+          loves making beautiful and user-friendly websites. I{"'"}m really into{" "}
+          <strong>front-end development</strong>, where I turn ideas into cool
+          digital experiences. I find the world of web tech fascinating. It lets
+          me <strong>create smooth websites</strong>, make them faster, and
+          solve tricky coding puzzles. I get a kick out of{" "}
+          <strong>making the web better</strong>, project by project. I think
+          the best websites are both functional and gorgeous. I work hard to
+          blend technical skills with a good eye for design, so every pixel and
+          line of code looks just right. My focus is on{" "}
+          <strong>giving users a great experience.</strong>
         </p>
       </div>
     </section>
