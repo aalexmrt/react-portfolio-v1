@@ -1,6 +1,6 @@
-import ProjectList from "src/components/ProjectList"
+import ProjectsList from "src/components/ProjectsList"
 
 const Projects = () => {
-  return <ProjectList></ProjectList>
+  return <ProjectsList></ProjectsList>
 }
 export default Projects

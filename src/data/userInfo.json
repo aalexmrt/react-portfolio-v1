@@ -4,43 +4,53 @@
   "description": "I'm Alex Martinez, a passionate fullstack developer. I'm interested on building web apps and learn new trending tech stack.",
   "skills": [
     {
-      "icon": "react/react-original-wordmark.svg",
+      "name": "React",
+      "icon": "skills-icons/react.svg",
       "linkInfo": "https://react.dev/"
     },
     {
-      "icon": "javascript/javascript-plain.svg",
+      "name": "Javascript",
+      "icon": "skills-icons/javascript.svg",
       "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
-      "icon": "typescript/typescript-plain.svg",
+      "name": "Typescript",
+      "icon": "skills-icons/typescript.svg",
       "linkInfo": "https://www.typescriptlang.org/"
     },
     {
-      "icon": "tailwindcss/tailwindcss-plain.svg  ",
+      "name": "Tailwindcss",
+      "icon": "skills-icons/tailwind.svg",
       "linkInfo": "https://tailwindcss.com/"
     },
     {
-      "icon": "nodejs/nodejs-plain.svg",
+      "name": "NodeJS",
+      "icon": "skills-icons/nodejs.svg",
       "linkInfo": "https://nodejs.org/en"
     },
     {
-      "icon": "python/python-original-wordmark.svg",
+      "name": "Python",
+      "icon": "skills-icons/python.svg",
       "linkInfo": "python/python-original-wordmark.svg"
     },
     {
-      "icon": "git/git-plain-wordmark.svg",
-      "linkInfo": "git/git-plain-wordmark.svg"
+      "name": "Git",
+      "icon": "skills-icons/git.svg",
+      "linkInfo": "https://git-scm.com/"
     },
     {
-      "icon": "docker/docker-plain-wordmark.svg",
-      "linkInfo": "https://www.gnu.org/software/bash/"
+      "name": "Docker",
+      "icon": "skills-icons/docker.svg",
+      "linkInfo": "https://www.docker.com/"
     },
     {
-      "icon": "jquery/jquery-plain-wordmark.svg",
+      "name": "Jquery",
+      "icon": "skills-icons/jquery.svg",
       "linkInfo": "https://jquery.com/"
     },
     {
-      "icon": "bootstrap/bootstrap-plain.svg",
+      "name": "Bootstrap",
+      "icon": "skills-icons/bootstrap.svg",
       "linkInfo": "https://getbootstrap.com/"
     }
   ]

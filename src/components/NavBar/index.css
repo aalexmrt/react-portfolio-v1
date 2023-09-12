@@ -82,13 +82,6 @@
 /* Mobile Devices - Phones/Tablets */
 
 @media only screen and (max-width: 767px) {
-  /* MOBILE Global classes */
-
-  /* .container {
-      margin-left: 0.4em;
-      margin-right: 0.4em;
-    } */
-
   /* MOBILE HEADINGS */
 
   h1 {
@@ -116,7 +109,8 @@
     flex-direction: column;
     position: fixed;
     justify-content: start;
-    height: min-content;
+    height: 100% !important;
+    width: 100% !important;
     top: 2.7em;
     left: 0;
     background-color: #ffffff;

@@ -1,28 +1,46 @@
 import workingEmoji from "src/assets/myself_emoji.png"
+import userInfo from "src/data/userInfo.json"
 
-const iconsSource = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons"
-
-export const Home = ({ greeting, title, description, skills }) => {
+export const Home = () => {
+  const { description, skills } = userInfo
   return (
-
-    <section id="home" className="grid lg:grid-cols-home lg:grid-rows-home lg:grid-flow-col gap-1 md:gap-y-4 mx-8 md:mx-16 mt-[4.3rem]">
-      {/* <h1 className="basis-full font-black text-center text-2xl -mt-32">👷‍♂️ under construction 🚧</h1> */}
-
-      <h1 className="font-black text-7xl md:text-7xl lg:text-8xl antialiased tracking-tighter min-w-min sm:max-w-[18rem] mt-4 lg:mt-[6rem]">Full Stack Developer </h1>
-      <div className="w-[60%] sm:w-[54%] lg:w-[70%] lg:ml-16 h-[100%] flex items-center lg:row-span-full lg:order-last ">
+    <section
+      id="home"
+      className="mt-[4.3rem] grid gap-1 md:gap-y-4 lg:grid-flow-col lg:grid-cols-home lg:grid-rows-home xl:max-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-5rem)]"
+    >
+      <h1 className="mt-4 min-w-min text-5xl font-black tracking-tight antialiased xs:text-6xl sm:max-w-[18rem] md:text-9xl lg:mt-[6rem] lg:text-7xl xl:text-9xl">
+        Full Stack Developer{" "}
+      </h1>
+      <div className="flex h-[100%] w-[60%] items-center sm:w-[54%] lg:order-last lg:row-span-full lg:ml-16 lg:w-[85%] xl:w-[80%]">
         <img src={workingEmoji}></img>
       </div>
-      <p className="text-lg md:text-xl mt-2 self-center md:max-w-[34rem] md:self-auto">{description}</p>
-      <div className='grid grid-cols-5 sm:grid-cols-10 justify-between md:justify-center h-max gap-y-4 mt-5'>
+      <p className="mt-2 self-center text-lg md:max-w-[48rem] md:self-auto lg:mt-8 lg:text-lg xl:text-3xl">
+        {description}
+      </p>
+      <div className="mt-5 grid h-max grid-cols-5 justify-between gap-y-4 sm:grid-cols-10 md:justify-center">
         {skills
           ? skills.map((skill, key) => (
-            <div key={key} className='flex overflow-hidden justify-center bg-[#e3e5e67e] shadow-lg drop-shadow-lg rounded-full w-16 h-16 sm:w-[3.4rem] sm:h-[3.4rem] md:w-[3.5rem] md:h-[3.5rem] xl:w-[4rem] xl:h-[4rem]'>
-              <a target="_blank" className="flex justify-center w-[82%] md:w-[70%]" href={skill.linkInfo} rel="noreferrer"><img className="w-[76%] lg:w-[90%]" src={`${iconsSource}/${skill.icon}`} /></a>
-            </div>
-          ))
+              <div
+                key={key}
+                className="flex h-16 w-16 justify-center overflow-hidden rounded-full bg-[#e3e5e67e] shadow-lg drop-shadow-lg sm:h-[3.4rem] sm:w-[3.4rem] md:h-[3.5rem] md:w-[3.5rem] xl:h-[4rem] xl:w-[4rem]"
+              >
+                <a
+                  target="_blank"
+                  className="flex w-[82%] justify-center md:w-[70%]"
+                  href={skill.linkInfo}
+                  rel="noreferrer"
+                >
+                  <img
+                    className="w-[76%] lg:w-[90%]"
+                    alt={skill.name}
+                    title={skill.name}
+                    src={skill.icon}
+                  />
+                </a>
+              </div>
+            ))
           : console.log("Error loading skills...")}
       </div>
-
     </section>
   )
 }
