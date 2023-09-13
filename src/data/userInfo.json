@@ -1,7 +1,7 @@
 {
   "greeting": " Hi, I'm Alex Martinez",
   "title": "Full Stack Developer ",
-  "description": "I'm Alex Martinez, a passionate fullstack developer. I'm interested on building web apps and learn new trending tech stack.",
+  "description": "Building Tomorrow's Web Today",
   "skills": [
     {
       "name": "React",
@@ -12,11 +12,6 @@
       "name": "Javascript",
       "icon": "skills-icons/javascript.svg",
       "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
-      "name": "Typescript",
-      "icon": "skills-icons/typescript.svg",
-      "linkInfo": "https://www.typescriptlang.org/"
     },
     {
       "name": "Tailwindcss",
@@ -42,6 +37,11 @@
       "name": "Docker",
       "icon": "skills-icons/docker.svg",
       "linkInfo": "https://www.docker.com/"
+    },
+    {
+      "name": "Typescript",
+      "icon": "skills-icons/typescript.svg",
+      "linkInfo": "https://www.typescriptlang.org/"
     },
     {
       "name": "Jquery",

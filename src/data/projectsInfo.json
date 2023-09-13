@@ -1,30 +1,94 @@
 [
   {
-    "title": "Invoices generator",
+    "name": "Invoices generator",
     "description": "Django web application to generate and mail invoices. ",
-    "imgURL": "https://github.com/aalexmrt/django-invoices-generator/blob/main/docs/gifs/add_invoice.gif?raw=true",
-    "techStack": ["django", "sql", "bootstrap"],
-    "gitURL": "https://github.com/aalexmrt/django-invoices-generator/"
+    "imgRef": "https://github.com/aalexmrt/django-invoices-generator/blob/main/docs/gifs/add_invoice.gif?raw=true",
+    "techStack": [
+      {
+        "name": "Python",
+        "icon": "skills-icons/python.svg",
+        "linkInfo": "https://www.python.org/"
+      },
+      {
+        "name": "Django",
+        "icon": "skills-icons/django.svg",
+        "linkInfo": "https://www.djangoproject.com/"
+      },
+      {
+        "name": "Javascript",
+        "icon": "skills-icons/javascript.svg",
+        "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      }
+    ],
+    "gitUrl": "https://github.com/aalexmrt/django-invoices-generator/"
   },
   {
-    "title": "Tic tac toe",
+    "name": "Tic tac toe",
     "description": "This project is a simple implementation of the classic tic-tac-toe game built using React.",
-    "imgURL": "https://github.com/aalexmrt/tic-tac-toe/blob/main/docs/gifs/tic-tac-toe-demo.gif?raw=true",
-    "techStack": ["django", "sql", "bootstrap"],
-    "gitURL": "https://github.com/aalexmrt/tic-tac-toe/"
+    "imgRef": "https://github.com/aalexmrt/tic-tac-toe/blob/main/docs/gifs/tic-tac-toe-demo.gif?raw=true",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "skills-icons/react.svg",
+        "linkInfo": "https://www.python.org/"
+      },
+      {
+        "name": "CSS3",
+        "icon": "skills-icons/css3.svg",
+        "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "HTML5",
+        "icon": "skills-icons/html5.svg",
+        "linkInfo": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+      }
+    ],
+    "gitUrl": "https://github.com/aalexmrt/tic-tac-toe/"
   },
   {
-    "title": "Simon game",
+    "name": "Simon game",
     "description": "This is a simple implementation of the classic Simon Game.",
-    "imgURL": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
-    "techStack": ["django", "sql", "bootstrap"],
-    "gitURL": "https://github.com/aalexmrt/simon-game-js"
+    "imgRef": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "skills-icons/react.svg",
+        "linkInfo": "https://www.python.org/"
+      },
+      {
+        "name": "CSS3",
+        "icon": "skills-icons/css3.svg",
+        "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "HTML5",
+        "icon": "skills-icons/html5.svg",
+        "linkInfo": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+      }
+    ],
+    "gitUrl": "https://github.com/aalexmrt/simon-game-js"
   },
   {
-    "title": "Pokemon API",
+    "name": "Pokemon API",
     "description": "This is a simple implementation of the classic Simon Game.",
-    "imgURL": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
-    "techStack": ["django", "sql", "bootstrap"],
-    "gitURL": ""
+    "imgRef": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "skills-icons/react.svg",
+        "linkInfo": "https://www.python.org/"
+      },
+      {
+        "name": "CSS3",
+        "icon": "skills-icons/css3.svg",
+        "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "HTML5",
+        "icon": "skills-icons/html5.svg",
+        "linkInfo": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+      }
+    ],
+    "gitUrl": ""
   }
 ]

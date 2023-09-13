@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <header className="fixed top-0 z-50 w-full bg-[#e3e5e6] px-8 py-5 sm:px-20 lg:px-40  xl:h-[5rem]">
         <NavBar></NavBar>
       </header>
-      <main className="mx-8 sm:mx-20 md:mt-[5rem] lg:mx-40">
+      <main className="mx-8 mt-[1rem] sm:mx-20 lg:mx-40 lg:mt-[5rem]">
         <Outlet></Outlet>
       </main>
       <footer className="bg-[#e3e5e6] px-8 py-5 sm:px-20 lg:px-40 xl:h-[6rem]">

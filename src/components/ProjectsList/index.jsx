@@ -1,14 +1,12 @@
 import ProjectDetail from "src/components/ProjectDetail"
 import getProjects from "src/services/getProjects"
 import { useEffect, useState } from "react"
-
+import projectsInfo from "src/data/projectsInfo.json"
 export const ProjectsList = () => {
   const [projects, setProjects] = useState([])
-
   useEffect(() => {
-    getProjects().then((projects) => setProjects(projects))
+    setProjects(projectsInfo)
   }, [setProjects])
-
   return (
     <section
       id="projects"
@@ -18,6 +16,7 @@ export const ProjectsList = () => {
       <div className="mt-6 grid gap-8 md:grid-cols-2 md:gap-3 md:gap-x-20 md:gap-y-8">
         {projects
           ? projects.map((item, key) => {
+              console.log(item, "this is item")
               const { name, description, imgRef, gitUrl, techStack } = item
               return (
                 <ProjectDetail

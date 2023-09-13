@@ -1,0 +1,63 @@
+//Simon game
+
+{
+  "tech_stack": [
+    {
+      "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+      "jquery": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+    },
+    {
+      "html5": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    }
+  ]
+}
+
+// Invoices generator
+
+{
+    "tech_stack": [
+      {
+        "python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "django": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+      },
+      {
+        "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      }
+    ]
+  }
+
+// React portfolio
+
+{
+    "tech_stack": [
+      {
+        "react": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      },
+      {
+        "tailwindcss": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+      },
+      {
+        "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      }
+    ]
+  }
+
+  // Tic tac toe
+
+  {
+    "tech_stack": [
+      {
+        "react": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      },
+      {
+        "css3": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+      },
+      {
+        "html5": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+      }
+    ]
+  }
