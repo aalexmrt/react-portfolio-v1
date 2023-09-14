@@ -3,9 +3,9 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="xl:grid-cols-aboutLarge xl:grid-rows-aboutLarge mt-[4.3rem] grid gap-1 self-center md:mb-16 md:mt-0  md:min-h-[calc(100vh-12rem)] xl:mt-0"
+      className="xl:grid-cols-aboutLarge xl:grid-rows-aboutLarge mt-[4.3rem] grid gap-1 self-center md:mt-0  md:min-h-[calc(100vh-12rem)] xl:mt-0"
     >
-      <h1 className="mt-8 text-5xl font-bold tracking-tight md:pt-4 md:text-6xl xl:col-span-2 xl:pt-4 xl:text-7xl">
+      <h1 className="text-5xl font-bold tracking-tight md:text-6xl xl:col-span-2 xl:pt-4 xl:text-7xl">
         About me
       </h1>
       <div className="lg:mt-8 xl:col-span-2 xl:grid xl:grid-cols-2 xl:items-center">

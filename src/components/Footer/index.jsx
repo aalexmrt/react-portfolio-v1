@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <ul className="flex h-full items-center justify-center text-[0.8em] sm:justify-between xl:text-[1rem]">
+    <ul className="flex h-[4rem] items-center justify-center text-[0.8em] sm:justify-between xl:text-[1rem]">
       <li className="hidden sm:block">
         📍 <strong>Spain</strong>
       </li>

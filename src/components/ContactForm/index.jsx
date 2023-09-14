@@ -40,24 +40,18 @@ export const ContactForm = () => {
       )
   }
 
-  // const testModal = () => {
-  //   setMailResponse({
-  //     type: "pending",
-  //     body: "Sending mail"
-  //   })
-  //   setShowModal(true)
-  // }
-
   return (
     <>
       <section
         id="contact"
         className="md:grid-rows-aboutLarge mt-[4.3rem] grid gap-1 pb-12 md:mb-4 md:mt-0 md:min-h-[calc(100vh-12rem)]"
       >
-        <h1 className="mt-8 text-5xl font-bold tracking-tighter">Contact</h1>
-        <div className="gap-4 md:grid md:grid-cols-2">
+        <h1 className="text-5xl font-bold tracking-tight md:pt-4 md:text-6xl xl:pt-4 xl:text-7xl">
+          Contact
+        </h1>
+        <div className="items-center gap-4 md:grid md:grid-cols-2">
           <div className="md:flex md:flex-col md:items-center md:justify-center md:gap-0  ">
-            <p className="mt-6 text-lg md:w-[20rem] md:text-2xl md:font-semibold lg:w-[50%]">
+            <p className="mt-6 text-2xl md:w-[20rem] md:text-2xl md:font-semibold lg:w-[70%]">
               Feel free to get in touch with me using this contact form or
               reaching out by LinkedIn.
               <span>
@@ -89,7 +83,7 @@ export const ContactForm = () => {
             <div className="mb-5">
               <label
                 htmlFor="name"
-                className="mb-3 block text-lg font-semibold text-[#07074D]"
+                className="mb-3 block text-2xl font-semibold text-[#07074D]"
               >
                 Full Name
               </label>
@@ -98,14 +92,14 @@ export const ContactForm = () => {
                 name="user_name"
                 id="name"
                 placeholder="Full Name"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-lg font-semibold text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-2xl font-semibold text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 required
               />
             </div>
             <div className="mb-5">
               <label
                 htmlFor="email"
-                className="mb-3 block text-lg font-semibold text-[#07074D]"
+                className="mb-3 block text-2xl font-semibold text-[#07074D]"
               >
                 Email Address
               </label>
@@ -114,14 +108,14 @@ export const ContactForm = () => {
                 name="user_email"
                 id="email"
                 placeholder="example@domain.com"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-lg font-semibold text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-2xl font-semibold text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 required
               />
             </div>
             <div className="mb-5">
               <label
                 htmlFor="message"
-                className="mb-3 block text-lg font-semibold text-[#07074D]"
+                className="mb-3 block text-2xl font-semibold text-[#07074D]"
               >
                 Message
               </label>
@@ -130,12 +124,12 @@ export const ContactForm = () => {
                 name="message"
                 id="message"
                 placeholder="Type your message"
-                className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-lg font-semibold text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-2xl font-semibold text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 required
               ></textarea>
             </div>
             <div>
-              <button className="hover:shadow-form rounded-md bg-[#6A64F1] px-8 py-3 text-lg font-semibold text-white outline-none">
+              <button className="hover:shadow-form rounded-md bg-[#6A64F1] px-8 py-3 text-2xl font-semibold text-white outline-none">
                 Submit
               </button>
             </div>

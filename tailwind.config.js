@@ -19,6 +19,7 @@ export default {
         home: "min-content min-content min-content",
         aboutLarge: "min-content 1fr",
         about: "min-content 1fr 1fr",
+        8: "repeat(8, minmax(0, 1fr))",
       },
     },
   },

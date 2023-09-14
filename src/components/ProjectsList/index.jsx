@@ -1,5 +1,4 @@
 import ProjectDetail from "src/components/ProjectDetail"
-import getProjects from "src/services/getProjects"
 import { useEffect, useState } from "react"
 import projectsInfo from "src/data/projectsInfo.json"
 export const ProjectsList = () => {
@@ -10,10 +9,12 @@ export const ProjectsList = () => {
   return (
     <section
       id="projects"
-      className="mt-[4.3rem] grid gap-5 overflow-hidden xl:mt-0"
+      className="grid gap-5 md:min-h-[calc(100vh-12rem)] xl:mt-0"
     >
-      <h1 className="mt-8 text-5xl font-bold tracking-tight">Projects</h1>
-      <div className="mt-6 grid gap-8 md:grid-cols-2 md:gap-3 md:gap-x-20 md:gap-y-8">
+      <h1 className="text-5xl font-bold tracking-tight md:text-6xl xl:pt-4 xl:text-7xl">
+        Projects
+      </h1>
+      <div className="grid gap-[2rem] md:grid-cols-2 ">
         {projects
           ? projects.map((item, key) => {
               console.log(item, "this is item")

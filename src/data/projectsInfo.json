@@ -23,6 +23,29 @@
     "gitUrl": "https://github.com/aalexmrt/django-invoices-generator/"
   },
   {
+    "name": "Portfolio website",
+    "description": "The first version of my portfolio website built with React and styled with Tailwind.",
+    "imgRef": "https://github.com/aalexmrt/react-portfolio-v1/blob/main/docs/images/presentation.png?raw=true",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "skills-icons/react.svg",
+        "linkInfo": "https://www.python.org/"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "skills-icons/tailwind.svg",
+        "linkInfo": "https://tailwindcss.com/"
+      },
+      {
+        "name": "CSS3",
+        "icon": "skills-icons/css3.svg",
+        "linkInfo": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+      }
+    ],
+    "gitUrl": "https://github.com/aalexmrt/react-portfolio-v1"
+  },
+  {
     "name": "Tic tac toe",
     "description": "This project is a simple implementation of the classic tic-tac-toe game built using React.",
     "imgRef": "https://github.com/aalexmrt/tic-tac-toe/blob/main/docs/gifs/tic-tac-toe-demo.gif?raw=true",
@@ -51,13 +74,13 @@
     "imgRef": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
     "techStack": [
       {
-        "name": "React",
-        "icon": "skills-icons/react.svg",
+        "name": "Javascript",
+        "icon": "skills-icons/javascript.svg",
         "linkInfo": "https://www.python.org/"
       },
       {
-        "name": "CSS3",
-        "icon": "skills-icons/css3.svg",
+        "name": "Jquery",
+        "icon": "skills-icons/jquery.svg",
         "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/CSS"
       },
       {
@@ -67,28 +90,5 @@
       }
     ],
     "gitUrl": "https://github.com/aalexmrt/simon-game-js"
-  },
-  {
-    "name": "Pokemon API",
-    "description": "This is a simple implementation of the classic Simon Game.",
-    "imgRef": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
-    "techStack": [
-      {
-        "name": "React",
-        "icon": "skills-icons/react.svg",
-        "linkInfo": "https://www.python.org/"
-      },
-      {
-        "name": "CSS3",
-        "icon": "skills-icons/css3.svg",
-        "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-      },
-      {
-        "name": "HTML5",
-        "icon": "skills-icons/html5.svg",
-        "linkInfo": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
-      }
-    ],
-    "gitUrl": ""
   }
 ]
