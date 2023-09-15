@@ -125,7 +125,7 @@ main > .contact .contact-me-container {
   main > .contact .contact-me-container {
     grid-template-columns: none;
   }
-  main > .contact {
+  main > section {
     padding-bottom: 3rem;
   }
 }
