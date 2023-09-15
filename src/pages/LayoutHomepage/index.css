@@ -1,0 +1,131 @@
+/* Container main */
+main > section {
+  min-height: calc(100vh - 5.7rem);
+}
+/* Hero section */
+
+.layout-homepage > main > .hero {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: min-content min-content 20px min-content;
+  grid-template-areas:
+    "title memoji"
+    "subtitle memoji"
+    "empty memoji"
+    "skills skills";
+  align-content: center;
+  gap: 3.3rem;
+}
+.layout-homepage > main > .hero > .skills {
+  grid-area: skills;
+}
+.layout-homepage > main > .hero > h1 {
+  grid-area: title;
+}
+.layout-homepage > main > .hero > h2 {
+  grid-area: subtitle;
+}
+.layout-homepage > main > .hero > .memoji {
+  order: 9999;
+  grid-area: memoji;
+}
+
+/* About section */
+main > .about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+    "title tile"
+    "profile-img description";
+  column-gap: 2rem;
+  padding-top: 1.5rem;
+}
+main > .about-me > h1 {
+  grid-area: title;
+}
+main > .about-me > .profile-img {
+  grid-area: profile-img;
+  margin-top: 3rem;
+  /* align-self: center; */
+}
+main > .about-me > p {
+  grid-area: description;
+  margin-top: 8rem;
+}
+
+/* Projects section */
+main > .projects {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  row-gap: 4rem;
+  padding-top: 1.5rem;
+}
+
+main > .projects > .projects-container {
+  align-self: self-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+/* Contact form section */
+main > .contact {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  min-height: calc(100vh - 10.7rem);
+  gap: 3rem;
+  padding-top: 1.5rem;
+}
+main > .contact .contact-me-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: self-start;
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .layout-homepage > main > section {
+    min-height: auto;
+  }
+
+  .layout-homepage > main > .hero {
+    padding-top: 1rem;
+    gap: 1rem;
+    grid-template-columns: none;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-areas:
+      "title"
+      "memoji"
+      "subtitle"
+      "skills";
+  }
+
+  main > .about-me {
+    gap: 1.5rem;
+    grid-template-columns: none;
+    grid-template-areas:
+      "title"
+      "profile-img"
+      "description";
+  }
+  main > .about-me > .profile-img {
+    margin-top: 0;
+  }
+  main > .about-me > p {
+    margin-top: 0;
+  }
+
+  main > .projects {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+  }
+  main > .projects > .projects-container {
+    grid-template-columns: none;
+  }
+  main > .contact .contact-me-container {
+    grid-template-columns: none;
+  }
+  main > .contact {
+    padding-bottom: 3rem;
+  }
+}

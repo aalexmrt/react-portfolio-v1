@@ -42,16 +42,13 @@ export const ContactForm = () => {
 
   return (
     <>
-      <section
-        id="contact"
-        className="md:grid-rows-aboutLarge mt-[4.3rem] grid gap-1 pb-12 md:mb-4 md:mt-0 md:min-h-[calc(100vh-12rem)]"
-      >
-        <h1 className="text-5xl font-bold tracking-tight md:pt-4 md:text-6xl xl:pt-4 xl:text-7xl">
+      <section className="contact">
+        <h1 className="text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
           Contact
         </h1>
-        <div className="items-center gap-4 md:grid md:grid-cols-2">
-          <div className="md:flex md:flex-col md:items-center md:justify-center md:gap-0  ">
-            <p className="mt-6 text-2xl md:w-[20rem] md:text-2xl md:font-semibold lg:w-[70%]">
+        <div className="contact-me-container">
+          <div className="contact-me-msg">
+            <p className="text-2xl md:w-[20rem] md:text-2xl md:font-semibold lg:w-[70%] xl:pt-[10rem]">
               Feel free to get in touch with me using this contact form or
               reaching out by LinkedIn.
               <span>
@@ -79,7 +76,7 @@ export const ContactForm = () => {
               </span>
             </p>
           </div>
-          <form className="mt-8 md:order-first" ref={form} onSubmit={sendEmail}>
+          <form className="contact-form" ref={form} onSubmit={sendEmail}>
             <div className="mb-5">
               <label
                 htmlFor="name"
@@ -128,13 +125,12 @@ export const ContactForm = () => {
                 required
               ></textarea>
             </div>
-            <div>
+            <div className="flex justify-end">
               <button className="hover:shadow-form rounded-md bg-[#6A64F1] px-8 py-3 text-2xl font-semibold text-white outline-none">
                 Submit
               </button>
             </div>
           </form>
-          {/* <button onClick={testModal}>test</button> */}
         </div>
       </section>
       {showModal ? (

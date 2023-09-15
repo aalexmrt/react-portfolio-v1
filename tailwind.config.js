@@ -15,7 +15,7 @@ export default {
         about: "1fr 1fr 1fr",
       },
       gridTemplateRows: {
-        layout: "1fr min-content",
+        layout: "min-content 1fr min-content",
         home: "min-content min-content min-content",
         aboutLarge: "min-content 1fr",
         about: "min-content 1fr 1fr",

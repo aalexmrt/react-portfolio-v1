@@ -109,22 +109,21 @@
     flex-direction: column;
     position: fixed;
     justify-content: start;
-    height: 100% !important;
-    width: 100% !important;
-    top: 2.7em;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+    top: 5.7rem;
     left: 0;
     background-color: #ffffff;
-    width: 100svw;
     height: calc(100vh - 55px);
     transform: translate(-101%);
     font-size: 2em;
     font-weight: bold;
     overflow: hidden;
     order: 5;
-    gap: 0;
+    gap: 1rem;
     padding: 0;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     border-radius: 0;
   }
 

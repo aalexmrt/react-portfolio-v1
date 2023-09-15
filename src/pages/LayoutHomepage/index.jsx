@@ -1,12 +1,10 @@
 import Footer from "src/components/Footer"
 import { Outlet } from "react-router-dom"
 import { NavBar } from "src/components/NavBar"
-
 import "./index.css"
-
-const Layout = ({ children }) => {
+const LayoutHome = ({ children }) => {
   return (
-    <div className="layout">
+    <div className="layout-homepage">
       <header className="fixed left-0 top-0 z-50 grid h-[5.7rem] w-full bg-[#e3e5e6] px-8 sm:px-20 lg:px-[12rem]">
         <NavBar></NavBar>
       </header>
@@ -20,4 +18,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
+export default LayoutHome
