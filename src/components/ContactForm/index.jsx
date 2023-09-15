@@ -43,9 +43,7 @@ export const ContactForm = () => {
   return (
     <>
       <section className="contact">
-        <h1 className="text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-          Contact
-        </h1>
+        <h1 className="title-section">Contact</h1>
         <div className="contact-me-container">
           <div className="contact-me-msg">
             <p className="text-2xl md:w-[20rem] md:text-2xl md:font-semibold lg:w-[70%] xl:pt-[10rem]">

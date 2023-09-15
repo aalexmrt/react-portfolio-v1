@@ -20,16 +20,12 @@ export const Hero = () => {
       }}
       className="hero grid md:gap-y-4 lg:grid-flow-col lg:grid-cols-home lg:grid-rows-home"
     >
-      <h1 className="min-w-min text-[4.2rem] font-black leading-none tracking-tight antialiased xs:text-6xl sm:max-w-[18rem] md:text-9xl lg:text-7xl xl:text-9xl">
-        Full Stack Developer{" "}
-      </h1>
+      <h1 className="title">Full Stack Developer </h1>
 
-      <div className="memoji w-[70%] sm:w-[54%] lg:w-[85%] xl:w-[80%]">
+      <div className="memoji">
         <img src={workingEmoji}></img>
       </div>
-      <h2 className="text-xl font-medium md:max-w-[48rem] lg:text-lg xl:text-4xl">
-        {description}
-      </h2>
+      <h2 className="subtitle">{description}</h2>
       <SkillsIcons />
     </motion.section>
   )

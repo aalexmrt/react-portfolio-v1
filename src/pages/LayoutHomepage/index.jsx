@@ -5,13 +5,13 @@ import "./index.css"
 const LayoutHome = ({ children }) => {
   return (
     <div className="layout-homepage">
-      <header className="fixed left-0 top-0 z-50 grid h-[5.7rem] w-full bg-[#e3e5e6] px-8 sm:px-20 lg:px-[12rem]">
+      <header>
         <NavBar></NavBar>
       </header>
-      <main className="mx-8 mt-[5.7rem] sm:mx-20 lg:mx-[12rem]">
+      <main>
         <Outlet></Outlet>
       </main>
-      <footer className="grid h-[5rem] items-center bg-[#e3e5e6] px-8 sm:px-20 lg:px-40">
+      <footer>
         <Footer></Footer>
       </footer>
     </div>

@@ -1,10 +1,59 @@
-/* Container main */
-main > section {
-  min-height: calc(100vh - 5.7rem);
-}
-/* Hero section */
+:root {
+  --two-xl-padding: 12rem;
+  --two-xl-margin: 12rem;
 
+  --xl-padding: 10rem;
+  --xl-margin: 10rem;
+
+  --lg-padding: 6.5rem;
+  --lg-margin: 6.5rem;
+
+  --md-padding: 5rem;
+  --md-margin: 5rem;
+
+  --sm-padding: 2.5rem;
+  --sm-margin: 2.5rem;
+
+  --xs-padding: 2rem;
+  --xs-margin: 2rem;
+
+  --header-height: 5.7rem;
+}
+/* Container header */
+header {
+  @apply fixed left-0 top-0 z-50 grid h-[var(--header-height)] w-full bg-[#e3e5e6];
+  /* Paddings */
+  @apply px-[var(--xs-padding)] sm:px-[var(--sm-padding)] md:px-[var(--md-padding)];
+  @apply lg:px-[var(--lg-padding)] xl:px-[var(--xl-padding)] 2xl:px-[--two-xl-padding];
+}
+
+/* Container main */
+main {
+  @apply mt-[--header-height];
+  /* Margins */
+  @apply px-[var(--xs-margin)] sm:px-[var(--sm-margin)] md:px-[var(--md-margin)];
+  @apply lg:px-[var(--lg-margin)] xl:px-[var(--xl-margin)] 2xl:px-[--two-xl-margin];
+}
+main > section {
+  min-height: calc(100vh - var(--header-height));
+}
+
+/* Container footer */
+footer {
+  @apply grid h-[5rem] items-center bg-[#e3e5e6];
+  /* Paddings */
+  @apply px-[var(--xs-padding)] sm:px-[var(--sm-padding)] md:px-[var(--md-padding)];
+  @apply lg:px-[var(--lg-padding)] xl:px-[var(--xl-padding)] 2xl:px-[--two-xl-padding];
+}
+/* Global styles sections */
+main > section > .title-section {
+  @apply text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl;
+}
+
+/* Hero section */
+/** Layout **/
 .layout-homepage > main > .hero {
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: min-content min-content 20px min-content;
@@ -28,6 +77,32 @@ main > section {
 .layout-homepage > main > .hero > .memoji {
   order: 9999;
   grid-area: memoji;
+}
+/** Styles **/
+
+main > .hero > .title {
+  @apply min-w-min font-black leading-none tracking-tight antialiased sm:max-w-[18rem];
+  /* Font size */
+  @apply text-[4.2rem] xs:text-[5.2rem] md:text-[6rem] lg:text-[6.4rem] xl:text-[7.4rem] 2xl:text-[8rem];
+}
+main > .hero > .subtitle {
+  @apply font-medium  md:max-w-[48rem];
+  @apply text-[1.4rem] xs:text-[1.7rem] sm:text-[2rem] md:text-[2rem] xl:text-[2.3rem] 2xl:text-[2.5rem];
+}
+main > .hero > .memoji {
+  @apply w-[16rem] xs:w-[15rem] sm:w-[15rem] md:w-[17rem] lg:w-[14rem] xl:w-[18rem] 2xl:w-[20rem];
+}
+main > .hero > .skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 3rem;
+  @apply xl:grid-cols-10;
+}
+main > .hero > .skills > div {
+  @apply flex  justify-center;
+
+  /* Sizes */
+  @apply h-12 w-12 sm:h-[3.4rem] sm:w-[3.4rem] md:h-[3.6rem] md:w-[3.6rem] lg:h-[3.8rem] lg:w-[3.8rem] xl:h-[4rem] xl:w-[4rem] 2xl:h-[4.7rem] 2xl:w-[4.7rem];
 }
 
 /* About section */
@@ -82,15 +157,9 @@ main > .contact .contact-me-container {
   align-content: self-start;
   gap: 3rem;
 }
-
-@media only screen and (max-width: 640px) {
-  .layout-homepage > main > section {
-    min-height: auto;
-  }
-
+@media only screen and (max-width: 1024px) {
   .layout-homepage > main > .hero {
-    padding-top: 1rem;
-    gap: 1rem;
+    gap: 4rem;
     grid-template-columns: none;
     grid-template-rows: min-content min-content min-content min-content;
     grid-template-areas:
@@ -99,7 +168,8 @@ main > .contact .contact-me-container {
       "subtitle"
       "skills";
   }
-
+}
+@media only screen and (max-width: 640px) {
   main > .about-me {
     gap: 1.5rem;
     grid-template-columns: none;
@@ -127,5 +197,14 @@ main > .contact .contact-me-container {
   }
   main > section {
     padding-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .layout-homepage > main > .hero {
+    gap: 1.5rem;
+  }
+
+  .layout-homepage > main > .hero > .skills {
+    row-gap: 1rem;
   }
 }

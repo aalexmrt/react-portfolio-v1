@@ -6,9 +6,7 @@ export const ProjectsList = () => {
 
   return (
     <section className="projects">
-      <h1 className="text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-        Projects
-      </h1>
+      <h1 className="title-section">Projects</h1>
       <div className="projects-container">
         {projects
           ? projects.map((item, key) => {

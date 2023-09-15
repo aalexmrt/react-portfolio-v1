@@ -80,59 +80,45 @@
 /* Media Queries */
 
 /* Mobile Devices - Phones/Tablets */
-
+@media only screen and (max-width: 480px) {
+  .navbar ul {
+    font-size: 1.7rem !important;
+    gap: 1.3rem !important;
+  }
+}
 @media only screen and (max-width: 767px) {
   /* MOBILE HEADINGS */
 
-  h1 {
-    font-size: 1.9rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-  }
-  header {
-    width: inherit;
-  }
   /* MOBILE NAVIGATION */
-  t .navbar {
+  .navbar {
     margin: 0;
     justify-content: end;
-    gap: 1em;
   }
   .navbar ul {
     display: flex;
     flex-direction: column;
     position: fixed;
-    justify-content: start;
+    justify-content: flex-start;
     min-height: 100%;
     width: 100%;
     text-align: center;
-    top: 5.7rem;
+    top: var(--header-height);
     left: 0;
     background-color: #ffffff;
     height: calc(100vh - 55px);
     transform: translate(-101%);
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     overflow: hidden;
     order: 5;
-    gap: 1rem;
+    gap: 2rem;
     padding: 0;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     border-radius: 0;
   }
 
   .navbar li {
     padding: 15px;
-  }
-
-  .navbar li a {
-    font-size: 1em;
   }
 
   .navbar li:first-child {
