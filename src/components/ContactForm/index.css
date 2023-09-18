@@ -1,0 +1,10 @@
+label {
+  @apply mb-3 block text-2xl font-semibold text-[#eeeeee];
+}
+.contact-form input {
+  @apply w-full rounded-xl border-[0.18rem] border-[var(--accent-color)] bg-[#eeeeee] px-6 py-3 text-2xl font-semibold text-[var(--secondary-color)] outline-none focus:border-[var(--complementary-color)] focus:shadow-md;
+}
+
+.contact-form textarea {
+  @apply w-full resize-none rounded-xl border-[0.18rem] border-[var(--accent-color)] bg-[#eeeeee] px-6 py-3 text-2xl font-semibold text-[var(--secondary-color)] outline-none focus:border-[var(--complementary-color)] focus:shadow-md;
+}

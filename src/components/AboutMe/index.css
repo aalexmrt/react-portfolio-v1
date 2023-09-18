@@ -1,0 +1,36 @@
+.profile-img-container {
+  outline-width: 0.3rem !important;
+  outline: solid;
+  outline-offset: 0.5rem;
+  outline-color: var(--accent-color);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.about-me-information {
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  gap: 1.5rem;
+}
+.about-me-information strong {
+  color: var(--accent-color);
+}
+
+.complementary {
+  color: var(--complementary-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .profile-img-container {
+    transition: 0.18s linear;
+  }
+  .profile-img-container:hover {
+    transform: scale(105%);
+  }
+  .profile-img-container:hover {
+    outline: dotted;
+    outline-width: 0.6rem !important;
+    outline-color: var(--accent-color);
+    outline-offset: 1rem;
+  }
+}

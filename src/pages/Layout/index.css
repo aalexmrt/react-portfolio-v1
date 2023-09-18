@@ -5,10 +5,11 @@
 }
 .layout > main > section {
   padding-top: 1.5rem;
+  min-height: auto;
 }
 
 .layout > main {
-  max-height: calc(100vh - 10.7rem);
+  min-height: calc(100vh - 10.7rem);
 }
 
 @media only screen and (max-width: 640px) {

@@ -20,8 +20,9 @@ export const Hero = () => {
       }}
       className="hero grid md:gap-y-4 lg:grid-flow-col lg:grid-cols-home lg:grid-rows-home"
     >
-      <h1 className="title">Full Stack Developer </h1>
-
+      <h1 className="title">
+        Full Stack <span className="text-[var(--accent-color)]">Developer</span>{" "}
+      </h1>
       <div className="memoji">
         <img src={workingEmoji}></img>
       </div>

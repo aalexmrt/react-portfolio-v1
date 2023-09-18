@@ -1,10 +1,22 @@
 .active {
-  @apply font-bold underline;
+  color: var(--accent-color);
+}
+.navbar ul {
+  background-color: rgb(47 47 47);
+  color: rgba(255, 255, 255, 0.9);
+  border: var(--primary-color);
+  border: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.01rem;
+}
+.navbar > ul > span {
+  background-color: rgba(255, 255, 255, 0.12);
+  height: 1.25rem;
 }
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
-  background-color: #3f3f3f;
+  background-color: var(--default-color);
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -104,7 +116,6 @@
     text-align: center;
     top: var(--header-height);
     left: 0;
-    background-color: #ffffff;
     height: calc(100vh - 55px);
     transform: translate(-101%);
     font-size: 2rem;

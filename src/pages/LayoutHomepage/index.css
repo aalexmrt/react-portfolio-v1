@@ -1,28 +1,21 @@
 :root {
   --two-xl-padding: 12rem;
-  --two-xl-margin: 12rem;
-
   --xl-padding: 10rem;
-  --xl-margin: 10rem;
-
   --lg-padding: 6.5rem;
-  --lg-margin: 6.5rem;
-
   --md-padding: 5rem;
-  --md-margin: 5rem;
-
   --sm-padding: 2.5rem;
-  --sm-margin: 2.5rem;
-
   --xs-padding: 2rem;
-  --xs-margin: 2rem;
 
   --header-height: 5.7rem;
 }
+
 /* Container header */
 header {
-  @apply fixed left-0 top-0 z-50 grid h-[var(--header-height)] w-full bg-[#e3e5e6];
-  /* Paddings */
+  background-color: var(--primary-color);
+  box-shadow: rgba(255, 255, 255, 0.12) 0px 1px 1px;
+
+  @apply fixed left-0 top-0 z-50 grid h-[var(--header-height)] w-full;
+  /* Paddings from smaller to large screens */
   @apply px-[var(--xs-padding)] sm:px-[var(--sm-padding)] md:px-[var(--md-padding)];
   @apply lg:px-[var(--lg-padding)] xl:px-[var(--xl-padding)] 2xl:px-[--two-xl-padding];
 }
@@ -30,30 +23,34 @@ header {
 /* Container main */
 main {
   @apply mt-[--header-height];
-  /* Margins */
-  @apply px-[var(--xs-margin)] sm:px-[var(--sm-margin)] md:px-[var(--md-margin)];
-  @apply lg:px-[var(--lg-margin)] xl:px-[var(--xl-margin)] 2xl:px-[--two-xl-margin];
 }
+
 main > section {
   min-height: calc(100vh - var(--header-height));
+  /* Margins from smaller to large screens */
+  @apply px-[var(--xs-padding)] sm:px-[var(--sm-padding)] md:px-[var(--md-padding)];
+  @apply lg:px-[var(--lg-padding)] xl:px-[var(--xl-padding)] 2xl:px-[--two-xl-padding];
 }
 
 /* Container footer */
 footer {
-  @apply grid h-[5rem] items-center bg-[#e3e5e6];
-  /* Paddings */
+  background-color: var(--primary-color);
+  box-shadow: rgba(255, 255, 255, 0.12) 0px -1px 1px;
+  @apply grid h-[5rem] items-center;
+  /* Paddings from smaller to large screens */
   @apply px-[var(--xs-padding)] sm:px-[var(--sm-padding)] md:px-[var(--md-padding)];
   @apply lg:px-[var(--lg-padding)] xl:px-[var(--xl-padding)] 2xl:px-[--two-xl-padding];
 }
 /* Global styles sections */
 main > section > .title-section {
-  @apply text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl;
+  @apply font-bold leading-none tracking-tight;
+  @apply text-[3rem] xs:text-[3.3rem] sm:text-[3.5rem] md:text-[3.75rem] lg:text-[4.1rem] xl:text-[4.3rem] 2xl:text-[4.5rem];
 }
 
 /* Hero section */
 /** Layout **/
 .layout-homepage > main > .hero {
-  overflow: hidden;
+  background-color: var(--primary-color);
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: min-content min-content 20px min-content;
@@ -75,7 +72,6 @@ main > section > .title-section {
   grid-area: subtitle;
 }
 .layout-homepage > main > .hero > .memoji {
-  order: 9999;
   grid-area: memoji;
 }
 /** Styles **/
@@ -109,20 +105,19 @@ main > .hero > .skills > div {
 main > .about-me {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content 1fr;
+  grid-template-rows: min-content min-content;
   grid-template-areas:
-    "title tile"
-    "profile-img description";
+    "title title"
+    "profile-img-container description";
+  gap: 2rem;
   column-gap: 2rem;
   padding-top: 1.5rem;
 }
 main > .about-me > h1 {
   grid-area: title;
 }
-main > .about-me > .profile-img {
-  grid-area: profile-img;
-  margin-top: 3rem;
-  /* align-self: center; */
+main > .about-me > .profile-img-container {
+  grid-area: profile-img-container;
 }
 main > .about-me > p {
   grid-area: description;
@@ -168,16 +163,26 @@ main > .contact .contact-me-container {
       "subtitle"
       "skills";
   }
-}
-@media only screen and (max-width: 640px) {
+  main > section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
   main > .about-me {
-    gap: 1.5rem;
+    gap: 3rem;
     grid-template-columns: none;
     grid-template-areas:
       "title"
-      "profile-img"
+      "profile-img-container"
       "description";
   }
+
+  main > .projects > .projects-container {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, min-content);
+  }
+}
+@media only screen and (max-width: 640px) {
   main > .about-me > .profile-img {
     margin-top: 0;
   }
@@ -203,8 +208,15 @@ main > .contact .contact-me-container {
   .layout-homepage > main > .hero {
     gap: 1.5rem;
   }
-
+  main > section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   .layout-homepage > main > .hero > .skills {
     row-gap: 1rem;
   }
+}
+
+.hyperlink-icon {
+  color: var(--complementary-color);
 }

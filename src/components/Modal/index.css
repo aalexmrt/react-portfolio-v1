@@ -1,3 +1,7 @@
+.section-modal {
+  @apply fixed left-0 top-0 grid h-full w-full place-items-center;
+}
+
 .lds-facebook {
   display: flex;
   align-items: center;
@@ -10,7 +14,7 @@
   width: 2.8rem;
 
   /* width: 16px; */
-  background: #6a64f1;
+  background: var(--complementary-color);
   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 .lds-facebook div:nth-child(1) {

@@ -1,6 +1,8 @@
 import { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import Modal from "src/components/Modal"
+import "./index.css"
+
 export const ContactForm = () => {
   const form = useRef()
   const mailInitialState = {
@@ -53,7 +55,7 @@ export const ContactForm = () => {
                 {" "}
                 <a
                   href="https://www.linkedin.com/in/alexmartinez598/"
-                  className="inline-flex items-center text-blue-600 hover:underline"
+                  className="hyperlink-icon inline-flex items-center hover:underline"
                 >
                   <svg
                     className="ml-2.5 h-4 w-4 lg:h-5 lg:w-5"
@@ -76,28 +78,17 @@ export const ContactForm = () => {
           </div>
           <form className="contact-form" ref={form} onSubmit={sendEmail}>
             <div className="mb-5">
-              <label
-                htmlFor="name"
-                className="mb-3 block text-2xl font-semibold text-[#07074D]"
-              >
-                Full Name
-              </label>
+              <label htmlFor="name">Full Name</label>
               <input
                 type="text"
                 name="user_name"
                 id="name"
                 placeholder="Full Name"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-2xl font-semibold text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 required
               />
             </div>
             <div className="mb-5">
-              <label
-                htmlFor="email"
-                className="mb-3 block text-2xl font-semibold text-[#07074D]"
-              >
-                Email Address
-              </label>
+              <label htmlFor="email">Email Address</label>
               <input
                 type="email"
                 name="user_email"
@@ -108,23 +99,17 @@ export const ContactForm = () => {
               />
             </div>
             <div className="mb-5">
-              <label
-                htmlFor="message"
-                className="mb-3 block text-2xl font-semibold text-[#07074D]"
-              >
-                Message
-              </label>
+              <label htmlFor="message">Message</label>
               <textarea
                 rows="4"
                 name="message"
                 id="message"
                 placeholder="Type your message"
-                className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-2xl font-semibold text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 required
               ></textarea>
             </div>
             <div className="flex justify-end">
-              <button className="hover:shadow-form rounded-md bg-[#6A64F1] px-8 py-3 text-2xl font-semibold text-white outline-none">
+              <button className="rounded-xl bg-[var(--accent-color)] px-8 py-3 text-2xl font-semibold text-white outline-none hover:bg-[#fa3b54]">
                 Submit
               </button>
             </div>

@@ -1,5 +1,5 @@
-import succeedIcon from "src/assets/succeded_icon.png"
-import errorIcon from "src/assets/error_icon.png"
+import succeedIcon from "src/assets/succeed_icon.svg"
+import errorIcon from "src/assets/failed_icon.svg"
 
 import "./index.css"
 
@@ -12,11 +12,11 @@ const Modal = ({ message, closeModal }) => {
   }
 
   return (
-    <section className="modal fixed left-0 top-0 grid h-full w-full place-items-center ">
-      <div className="relative mx-8 flex flex-col justify-center rounded-lg border-[0.3rem] border-[#858585] bg-[#ffffff] px-7  py-[1rem] md:px-14 ">
+    <section className="section-modal modal">
+      <div className="relative mx-8 flex flex-col justify-center rounded-lg border-[0.3rem] border-[var(--accent-color)] bg-[var(--primary-color)] px-7  py-[1rem] md:px-14 ">
         {message.type !== "pending" ? (
           <button
-            className="absolute right-0 top-0 mr-2 mt-2 w-2 min-w-min rounded-full bg-neutral-50 p-[0.3rem]"
+            className="absolute right-0 top-0 mr-2 mt-2 w-2 min-w-min rounded-full p-[0.3rem]"
             onClick={closeModal}
           >
             <svg
@@ -44,7 +44,7 @@ const Modal = ({ message, closeModal }) => {
           )}
           <h4 className="text-xl tracking-wide ">{message.body}</h4>
         </div>
-        <div className="flex justify-center "></div>
+        <div className="flex justify-center"></div>
       </div>
     </section>
   )
