@@ -48,7 +48,7 @@ export const ContactForm = () => {
         <h1 className="title-section">Contact</h1>
         <div className="contact-me-container">
           <div className="contact-me-msg">
-            <p className="text-2xl md:w-[20rem] md:text-2xl md:font-semibold lg:w-[70%] xl:pt-[10rem]">
+            <p className="text-xl md:w-[20rem] md:font-semibold lg:w-[85%] lg:text-3xl ">
               Feel free to get in touch with me using this contact form or
               reaching out by LinkedIn.
               <span>
@@ -58,7 +58,7 @@ export const ContactForm = () => {
                   className="hyperlink-icon inline-flex items-center hover:underline"
                 >
                   <svg
-                    className="ml-2.5 h-4 w-4 lg:h-5 lg:w-5"
+                    className="ml-2.5 h-4 w-4 lg:h-5 lg:w-5 xl:h-6 xl:w-6"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
