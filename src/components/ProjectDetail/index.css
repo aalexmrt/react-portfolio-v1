@@ -1,0 +1,4 @@
+.project-detail-container {
+  height: inherit;
+  @apply rounded-xl border-[0.4rem] border-[var(--accent-color)] bg-[var(--primary-color)] px-4 py-8 pl-8;
+}

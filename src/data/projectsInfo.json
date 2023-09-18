@@ -1,7 +1,7 @@
 [
   {
     "name": "Invoices generator",
-    "description": "Django web application to generate and mail invoices. ",
+    "description": "Django web application to generate and mail invoices.",
     "imgRef": "https://github.com/aalexmrt/django-invoices-generator/blob/main/docs/gifs/add_invoice.gif?raw=true",
     "techStack": [
       {
@@ -24,7 +24,7 @@
   },
   {
     "name": "Portfolio website",
-    "description": "The first version of my portfolio website built with React and styled with Tailwind.",
+    "description": "Responsive portfolio website built with React, styled with Tailwind and animated with Framer Motion.",
     "imgRef": "https://github.com/aalexmrt/react-portfolio-v1/blob/main/docs/images/presentation.png?raw=true",
     "techStack": [
       {
@@ -47,7 +47,7 @@
   },
   {
     "name": "Tic tac toe",
-    "description": "This project is a simple implementation of the classic tic-tac-toe game built using React.",
+    "description": "Website for the implementation of the classic tic-tac-toe game built using React.",
     "imgRef": "https://github.com/aalexmrt/tic-tac-toe/blob/main/docs/gifs/tic-tac-toe-demo.gif?raw=true",
     "techStack": [
       {
@@ -70,7 +70,7 @@
   },
   {
     "name": "Simon game",
-    "description": "This is a simple implementation of the classic Simon Game.",
+    "description": "Website implementation of the classic Simon Game.",
     "imgRef": "https://github.com/aalexmrt/simon-game-js/blob/main/docs/gifs/demo_simon_game.gif?raw=true",
     "techStack": [
       {

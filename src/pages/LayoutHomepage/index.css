@@ -142,7 +142,7 @@ main > .projects > .projects-container {
 main > .contact {
   display: grid;
   grid-template-rows: min-content 1fr;
-  min-height: calc(100vh - 10.7rem);
+  min-height: calc(100vh - 12rem);
   gap: 2rem;
 }
 main > .contact .contact-me-container {

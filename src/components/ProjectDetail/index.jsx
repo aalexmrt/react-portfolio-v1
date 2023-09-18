@@ -1,5 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
+
+import "./index.css"
 export const ProjectDetail = ({
   name,
   description,
@@ -27,8 +29,9 @@ export const ProjectDetail = ({
       whileHover="hover"
       whileTap="tab"
       rel="noreferrer"
+      className="project-detail-container"
     >
-      <figure className="flex h-min flex-row rounded-xl border-[0.4rem] border-[var(--accent-color)] bg-[var(--primary-color)] px-4 py-8 pl-8  ">
+      <figure className="flex h-min flex-row   ">
         <div>
           <h4 className="mt-3 text-4xl font-bold tracking-tight">
             {name} <span> </span>
