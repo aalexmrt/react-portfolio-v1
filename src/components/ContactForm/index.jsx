@@ -31,12 +31,18 @@ export const ContactForm = () => {
         (result) => {
           setMailResponse({
             type: "succeed",
-            body: "Mail has sent successfully.",
+            body: "Mail has been sent successfully.",
           })
+          setTimeout(() => {
+            closeModal()
+          }, 3000)
           console.log(result)
         },
         (error) => {
           setMailResponse({ type: "error", body: "Cannot send mail." })
+          setTimeout(() => {
+            closeModal()
+          }, 3000)
           console.log(error)
         },
       )
