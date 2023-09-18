@@ -1,10 +1,14 @@
 label {
-  @apply mb-3 block text-2xl font-semibold text-[#eeeeee];
+  @apply mb-3 block text-xl font-semibold text-[#eeeeee] md:text-2xl;
 }
 .contact-form input {
-  @apply w-full rounded-xl border-[0.18rem] border-[var(--accent-color)] bg-[#eeeeee] px-6 py-3 text-2xl font-semibold text-[var(--secondary-color)] outline-none focus:border-[var(--complementary-color)] focus:shadow-md;
+  @apply w-full rounded-xl border-[0.18rem] border-[var(--accent-color)] bg-[#eeeeee] px-6 py-3 text-xl font-semibold text-[var(--secondary-color)] outline-none focus:border-[var(--complementary-color)] focus:shadow-md md:text-2xl;
 }
 
 .contact-form textarea {
-  @apply w-full resize-none rounded-xl border-[0.18rem] border-[var(--accent-color)] bg-[#eeeeee] px-6 py-3 text-2xl font-semibold text-[var(--secondary-color)] outline-none focus:border-[var(--complementary-color)] focus:shadow-md;
+  @apply w-full resize-none rounded-xl border-[0.18rem] border-[var(--accent-color)] bg-[#eeeeee] px-6 py-3 text-xl font-semibold text-[var(--secondary-color)] outline-none focus:border-[var(--complementary-color)] focus:shadow-md md:text-2xl;
+}
+
+.contact-form button:disabled {
+  background-color: var(--secondary-color);
 }

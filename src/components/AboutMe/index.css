@@ -20,7 +20,7 @@
   color: var(--complementary-color);
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .profile-img-container {
     transition: 0.18s linear;
   }

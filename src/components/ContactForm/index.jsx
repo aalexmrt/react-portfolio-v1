@@ -11,6 +11,7 @@ export const ContactForm = () => {
   }
   const [mailResponse, setMailResponse] = useState(mailInitialState)
   const [showModal, setShowModal] = useState(false)
+  const [disabled, setDisabled] = useState(false)
 
   const closeModal = () => {
     setShowModal(false)
@@ -18,6 +19,7 @@ export const ContactForm = () => {
   }
 
   const sendEmail = (e) => {
+    setDisabled(true)
     e.preventDefault()
     emailjs
       .sendForm(
@@ -115,7 +117,10 @@ export const ContactForm = () => {
               ></textarea>
             </div>
             <div className="flex justify-end">
-              <button className="rounded-xl bg-[var(--accent-color)] px-8 py-3 text-2xl font-semibold text-white outline-none hover:bg-[#fa3b54]">
+              <button
+                disabled={disabled}
+                className="rounded-xl bg-[var(--accent-color)] px-8 py-3 text-xl font-semibold text-white outline-none hover:bg-[#fa3b54] md:text-2xl"
+              >
                 Submit
               </button>
             </div>

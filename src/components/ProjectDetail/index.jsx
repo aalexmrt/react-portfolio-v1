@@ -33,10 +33,10 @@ export const ProjectDetail = ({
     >
       <figure className="flex h-min flex-row   ">
         <div>
-          <h4 className="mt-3 text-4xl font-bold tracking-tight">
+          <h4 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
             {name} <span> </span>
           </h4>
-          <p className="mt-4 text-base md:text-2xl">{description}</p>
+          <p className="mt-4 text-xl md:text-2xl">{description}</p>
           <div className="mt-4 flex flex-wrap gap-x-16 gap-y-2 text-lg">
             {techStack
               ? techStack.map((item, index) => (
@@ -48,7 +48,9 @@ export const ProjectDetail = ({
                       className="h-[1.5rem] w-[1.5rem]"
                       src={item.icon}
                     ></img>
-                    <p className="text-[var(--default-color)]">{item.name}</p>
+                    <p className="text-sm text-[var(--default-color)] xs:text-base md:text-lg">
+                      {item.name}
+                    </p>
                   </div>
                 ))
               : null}
