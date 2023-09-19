@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom"
 import { Fragment } from "react"
-import { motion } from "framer-motion"
 import "./index.css"
 
 const NAVSECTIONS = [
@@ -24,7 +23,9 @@ export const NavBar = () => {
         className={({ isActive }) => (isActive ? "null" : "null")}
         to="/"
       >
-        <h3 className="text-4xl font-black tracking-tighter md:block">AM</h3>
+        <h3 className="text-4xl font-black tracking-tight md:block">
+          AM<span className="text-[var(--accent-color)]">.</span>
+        </h3>
       </NavLink>
 
       <div
