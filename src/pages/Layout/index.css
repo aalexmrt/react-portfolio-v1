@@ -7,6 +7,12 @@
   padding-top: 4rem;
   min-height: auto;
 }
+.layout > main > .about-me {
+  padding-bottom: 5rem;
+}
+.layout > main > .projects {
+  padding-bottom: 5rem;
+}
 
 .layout > main {
   min-height: calc(100vh - 10.7rem);

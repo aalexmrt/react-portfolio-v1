@@ -111,7 +111,7 @@ main > .about-me {
     "profile-img-container description";
   gap: 2rem;
   column-gap: 4rem;
-  padding-top: 1.5rem;
+  padding-top: 3rem;
 }
 main > .about-me > h1 {
   grid-area: title;
@@ -128,8 +128,8 @@ main > .about-me > p {
 main > .projects {
   display: grid;
   grid-template-rows: min-content 1fr;
-  row-gap: 2rem;
-  padding-top: 1.5rem;
+  row-gap: 3rem;
+  padding-top: 3rem;
 }
 
 main > .projects > .projects-container {
@@ -140,10 +140,15 @@ main > .projects > .projects-container {
 }
 /* Contact form section */
 main > .contact {
+  padding-bottom: 5rem;
+}
+
+main > .contact {
   display: grid;
   grid-template-rows: min-content 1fr;
   min-height: calc(100vh - 12rem);
-  gap: 2rem;
+  gap: 3rem;
+  padding-top: 3rem;
 }
 main > .contact .contact-me-container {
   display: grid;
@@ -185,6 +190,10 @@ main > .contact .contact-me-container {
   }
 }
 @media only screen and (max-width: 640px) {
+  main > section {
+    padding-bottom: 3rem;
+  }
+
   main > .about-me > .profile-img {
     margin-top: 0;
   }
@@ -199,14 +208,12 @@ main > .contact .contact-me-container {
   main > .projects > .projects-container {
     grid-template-columns: none;
   }
-
-  main > section {
-    padding-bottom: 3rem;
-  }
 }
 @media only screen and (max-width: 480px) {
   .layout-homepage > main > .hero {
     gap: 1.5rem;
+    padding-top: 2.5rem;
+    align-content: flex-start;
   }
   main > section {
     padding-top: 1.5rem;

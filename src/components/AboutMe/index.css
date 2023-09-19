@@ -9,7 +9,7 @@
 
 .about-me-information {
   display: grid;
-  grid-template-rows: repeat(5, min-content);
+  grid-template-rows: repeat(4, min-content);
   gap: 1.5rem;
 }
 .about-me-information strong {
