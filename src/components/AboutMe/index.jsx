@@ -16,13 +16,13 @@ const AboutMe = () => {
           Tailwind, Django, and JavaScript.
         </p>
         <p className="text-xl md:text-2xl">
-          +2 years of experience, I{"'"}ve built tools to improve and automate
-          processes, delivering efficient solutions and attractive graphical
-          interfaces.
+          Over 2+ years of experience in which I have built tools to improve and
+          automate processes, delivering efficient solutions and attractive
+          graphical interfaces.
         </p>
         <p className="text-xl md:text-2xl">
-          I graduated in Web Development and I keep training myself through
-          online courses and building personal projects.
+          I graduated in Web Development and I have continued to develop my
+          skills through online courses and building personal projects.
         </p>
       </div>
     </section>
