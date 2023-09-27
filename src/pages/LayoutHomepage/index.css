@@ -79,7 +79,7 @@ main > section > .title-section {
 main > .hero > .title {
   @apply min-w-min font-black leading-none tracking-tight antialiased sm:max-w-[18rem];
   /* Font size */
-  @apply text-[4.2rem] xs:text-[5.2rem] md:text-[6rem] lg:text-[6.4rem] xl:text-[7.4rem] 2xl:text-[8rem];
+  @apply text-[3.7rem] xs:text-[5.2rem] md:text-[6rem] lg:text-[6.4rem] xl:text-[7.4rem] 2xl:text-[8rem];
 }
 main > .hero > .subtitle {
   @apply font-medium  md:max-w-[48rem];
