@@ -12,8 +12,8 @@ const AboutMe = () => {
           Hi, I{"'"}m <strong>Alex Martinez!</strong> 👋
         </h3>
         <p className="text-xl md:text-2xl">
-          I develop websites for various purposes using technologies like React,
-          Tailwind, Django, and JavaScript.
+          I develop websites for various purposes using technologies like
+          JavaScript, React, Node.js, Tailwind, PostgreSQL and Python.
         </p>
         <p className="text-xl md:text-2xl">
           Over 2+ years of experience in which I have built tools to improve and
