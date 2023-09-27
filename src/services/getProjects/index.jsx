@@ -8,11 +8,11 @@ const fromApiResponseToProjects = (apiResponse) => {
         name,
         description,
         img_url: imgRef,
-        git_url: gitUrl,
+        git_url: projectUrl,
         tech_stack: techStack,
       } = item
 
-      return { name, description, imgRef, gitUrl, techStack }
+      return { name, description, imgRef, projectUrl, techStack }
     })
     return projects
   }

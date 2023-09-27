@@ -7,7 +7,7 @@ export const ProjectDetail = ({
   description,
   imgRef,
   techStack,
-  gitUrl,
+  projectUrl,
 }) => {
   let boxVariants = {}
   const isMobile = window.innerWidth < 768 // Add the width you want to check for here (now 768px)
@@ -24,7 +24,7 @@ export const ProjectDetail = ({
   return (
     <motion.a
       target="_blank"
-      href={gitUrl}
+      href={projectUrl}
       variants={boxVariants}
       whileHover="hover"
       whileTap="tab"

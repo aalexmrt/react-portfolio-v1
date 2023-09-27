@@ -17,7 +17,7 @@
         "icon": "skills-icons/javascript.svg"
       }
     ],
-    "gitUrl": "https://nextjs-tweets.vercel.app/"
+    "projectUrl": "https://nextjs-tweets.vercel.app/"
   },
   {
     "name": "Tic tac toe",
@@ -37,7 +37,7 @@
         "icon": "skills-icons/html5.svg"
       }
     ],
-    "gitUrl": "https://tic-tac-toe-sand-ten.vercel.app/"
+    "projectUrl": "https://tic-tac-toe-sand-ten.vercel.app/"
   },
   {
     "name": "Pokemon API",
@@ -57,7 +57,7 @@
         "icon": "skills-icons/html5.svg"
       }
     ],
-    "gitUrl": "https://react-pokemon-game-lac.vercel.app/"
+    "projectUrl": "https://react-pokemon-game-lac.vercel.app/"
   },
   {
     "name": "Portfolio website",
@@ -77,6 +77,6 @@
         "icon": "skills-icons/css3.svg"
       }
     ],
-    "gitUrl": "https://react-portfolio-v1-nine.vercel.app/"
+    "projectUrl": "https://react-portfolio-v1-nine.vercel.app/"
   }
 ]

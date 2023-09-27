@@ -10,14 +10,14 @@ export const ProjectsList = () => {
       <div className="projects-container">
         {projects
           ? projects.map((item, key) => {
-              const { name, description, imgRef, gitUrl, techStack } = item
+              const { name, description, imgRef, projectUrl, techStack } = item
               return (
                 <ProjectDetail
                   key={key}
                   name={name}
                   description={description}
                   imgRef={imgRef}
-                  gitUrl={gitUrl}
+                  projectUrl={projectUrl}
                   techStack={techStack}
                 ></ProjectDetail>
               )
