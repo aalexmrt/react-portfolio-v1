@@ -19,30 +19,32 @@ const SkillsIcons = () => {
   return (
     <>
       <div className="skills">
-        {skills
-          ? skills.map((skill, key) => (
-              <motion.div
-                variants={boxVariants}
-                whileHover="hover"
-                whileTap="tap"
-                key={key}
+        {skills ? (
+          skills.map((skill, key) => (
+            <motion.div
+              variants={boxVariants}
+              whileHover="hover"
+              whileTap="tap"
+              key={key}
+            >
+              <a
+                target="_blank"
+                className="flex justify-center"
+                href={skill.linkInfo}
+                rel="noreferrer"
               >
-                <a
-                  target="_blank"
-                  className="flex justify-center"
-                  href={skill.linkInfo}
-                  rel="noreferrer"
-                >
-                  <img
-                    className="w-[100%]"
-                    alt={skill.name}
-                    title={skill.name}
-                    src={skill.icon}
-                  />
-                </a>
-              </motion.div>
-            ))
-          : console.log("Error loading skills...")}
+                <img
+                  className="w-[100%]"
+                  alt={skill.name}
+                  title={skill.name}
+                  src={skill.icon}
+                />
+              </a>
+            </motion.div>
+          ))
+        ) : (
+          <p>No skills found ...</p>
+        )}
       </div>
     </>
   )

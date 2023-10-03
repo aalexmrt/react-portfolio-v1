@@ -1,20 +1,22 @@
 import { NavLink } from "react-router-dom"
-import { Fragment } from "react"
+import { useState } from "react"
 import "./index.css"
 
-const NAVSECTIONS = [
-  { route: "/", name: "Home" },
-  { route: "/about", name: "About" },
-  { route: "/projects", name: "Projects" },
-  { route: "/contact", name: "Contact" },
-]
+export const NavBar = ({ intersectedSection }) => {
+  const [isMobileNavOpen, setMobileNavOpen] = useState(false)
 
-export const NavBar = () => {
   function toggleResponsiveMenu() {
     const menuToggle = document.querySelector(".menu-toggle")
     const nav = document.querySelector(".nav")
     menuToggle.classList.toggle("is-active")
     nav.classList.toggle("mobile-nav")
+    setMobileNavOpen(!isMobileNavOpen)
+  }
+
+  const handleSectionClick = () => {
+    if (isMobileNavOpen) {
+      toggleResponsiveMenu()
+    }
   }
 
   return (
@@ -38,23 +40,43 @@ export const NavBar = () => {
         <span className="bar"></span>
       </div>
       <ul className="nav justify-self-center rounded-full p-1 font-medium shadow-sm drop-shadow-sm md:flex md:justify-between md:gap-4 md:px-8 md:py-2">
-        {NAVSECTIONS
-          ? NAVSECTIONS.map((section, index) => {
-              return (
-                <Fragment key={index}>
-                  <li
-                    className="hover:text-[var(--accent-color)]"
-                    onClick={toggleResponsiveMenu}
-                  >
-                    <NavLink to={section.route}>{section.name}</NavLink>
-                  </li>
-                  {NAVSECTIONS.length - 1 !== index ? (
-                    <span className="hidden w-[1px] self-center md:block"></span>
-                  ) : null}
-                </Fragment>
-              )
-            })
-          : null}
+        <li
+          className={
+            intersectedSection === "home" ? "nav-item active" : "nav-item"
+          }
+          onClick={handleSectionClick}
+        >
+          <a href="#home">Home</a>
+        </li>
+        <span className="hidden w-[1px] self-center md:block"></span>
+        <li
+          className={
+            intersectedSection === "aboutMe" ? "nav-item active" : "nav-item"
+          }
+          onClick={handleSectionClick}
+        >
+          <a href="#aboutMe">About</a>
+        </li>
+        <span className="hidden w-[1px] self-center md:block"></span>
+        <li
+          className={
+            intersectedSection === "projects" ? "nav-item active" : "nav-item"
+          }
+          onClick={handleSectionClick}
+        >
+          <a href="#projects" disabled>
+            Projects
+          </a>
+        </li>
+        <span className="hidden w-[1px] self-center md:block"></span>
+        <li
+          className={
+            intersectedSection === "contact" ? "nav-item active" : "nav-item"
+          }
+          onClick={handleSectionClick}
+        >
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
       <div className="align-center decoration-none hover:text-bold hidden flex-row items-center justify-center gap-3 justify-self-end text-[30px] md:flex  md:text-[2.5rem] ">
         <a

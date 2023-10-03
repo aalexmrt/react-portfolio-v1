@@ -30,6 +30,8 @@
 html {
   background-color: var(--primary-color);
   overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-padding: var(--header-height);
 }
 
 #root {

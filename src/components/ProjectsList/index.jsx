@@ -5,7 +5,7 @@ export const ProjectsList = () => {
   const projects = projectsInfo
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h1 className="title-section">Projects</h1>
       <div className="projects-container">
         {projects

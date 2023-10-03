@@ -38,21 +38,23 @@ export const ContactForm = () => {
           setTimeout(() => {
             closeModal()
           }, 3000)
-          console.log(result)
         },
         (error) => {
-          setMailResponse({ type: "error", body: "Cannot send mail." })
+          setMailResponse({
+            type: "error",
+            body: "Cannot send mail.",
+            error_msg: error.message,
+          })
           setTimeout(() => {
             closeModal()
           }, 3000)
-          console.log(error)
         },
       )
   }
 
   return (
     <>
-      <section className="contact">
+      <section className="contact" id="contact">
         <h1 className="title-section">Contact</h1>
         <div className="contact-me-container">
           <div className="contact-me-msg">

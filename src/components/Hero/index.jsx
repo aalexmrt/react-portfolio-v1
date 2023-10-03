@@ -19,6 +19,7 @@ export const Hero = () => {
         hidden: { y: 50, opacity: 0 },
       }}
       className="hero grid md:gap-y-4 lg:grid-flow-col lg:grid-cols-home lg:grid-rows-home"
+      id="home"
     >
       <h1 className="title">
         Full Stack <span className="text-[var(--accent-color)]">Developer</span>{" "}

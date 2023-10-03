@@ -1,5 +1,14 @@
 .active {
   color: var(--accent-color);
+  transform: unset !important;
+  pointer-events: none;
+}
+.nav-item {
+  transition: all 0.1s ease-in-out;
+}
+.nav-item:hover {
+  transform: scale(1.1);
+  color: var(--accent-color);
 }
 .navbar ul {
   background-color: rgb(47 47 47);
