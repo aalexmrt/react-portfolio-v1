@@ -13,10 +13,10 @@ const AboutMe = () => {
         </h3>
         <p className="text-xl md:text-2xl">
           I develop websites for various purposes using technologies like
-          JavaScript, React, Node.js, Tailwind, PostgreSQL and Python.
+          React.js, Express.js, Tailwind, PostgreSQL, Python and more.
         </p>
         <p className="text-xl md:text-2xl">
-          Over 2+ years of experience in which I have built tools to improve and
+          Over 3+ years of experience in which I have built tools to improve and
           automate processes, delivering efficient solutions and attractive
           graphical interfaces.
         </p>
