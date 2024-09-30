@@ -58,7 +58,7 @@ export const NavBar = ({ intersectedSection }) => {
           <a href="#aboutMe">About</a>
         </li>
         <span className="hidden w-[1px] self-center md:block"></span>
-        <li
+        {/* <li
           className={
             intersectedSection === "projects" ? "nav-item active" : "nav-item"
           }
@@ -68,7 +68,7 @@ export const NavBar = ({ intersectedSection }) => {
             Projects
           </a>
         </li>
-        <span className="hidden w-[1px] self-center md:block"></span>
+        <span className="hidden w-[1px] self-center md:block"></span> */}
         <li
           className={
             intersectedSection === "contact" ? "nav-item active" : "nav-item"

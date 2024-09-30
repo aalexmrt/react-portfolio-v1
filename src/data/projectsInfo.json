@@ -1,25 +1,5 @@
 [
   {
-    "name": "Tweets clone",
-    "description": "Twitter clone built with NextJS and Tailwind CSS with authentication through GitHub.",
-    "imgRef": "https://github.com/aalexmrt/django-invoices-generator/blob/main/docs/gifs/add_invoice.gif?raw=true",
-    "techStack": [
-      {
-        "name": "NextJS",
-        "icon": "skills-icons/nextjs.svg"
-      },
-      {
-        "name": "React",
-        "icon": "skills-icons/react.svg"
-      },
-      {
-        "name": "Javascript",
-        "icon": "skills-icons/javascript.svg"
-      }
-    ],
-    "projectUrl": "https://nextjs-tweets.vercel.app/"
-  },
-  {
     "name": "Tic tac toe",
     "description": "Website for the implementation of the classic tic-tac-toe game built using React.",
     "imgRef": "https://github.com/aalexmrt/tic-tac-toe/blob/main/docs/gifs/tic-tac-toe-demo.gif?raw=true",
@@ -58,25 +38,5 @@
       }
     ],
     "projectUrl": "https://react-pokemon-game-lac.vercel.app/"
-  },
-  {
-    "name": "Portfolio website",
-    "description": "Responsive portfolio website built with React, styled with Tailwind and animated with Framer Motion.",
-    "imgRef": "https://github.com/aalexmrt/react-portfolio-v1/blob/main/docs/images/presentation.png?raw=true",
-    "techStack": [
-      {
-        "name": "React",
-        "icon": "skills-icons/react.svg"
-      },
-      {
-        "name": "Tailwind",
-        "icon": "skills-icons/tailwind.svg"
-      },
-      {
-        "name": "CSS3",
-        "icon": "skills-icons/css3.svg"
-      }
-    ],
-    "projectUrl": "https://react-portfolio-v1-nine.vercel.app/"
   }
 ]
