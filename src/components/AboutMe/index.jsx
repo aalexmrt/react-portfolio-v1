@@ -32,9 +32,4 @@ const AboutMe = () => {
   )
 }
 
-// I’m a full-stack developer with over 3 years of experience, originally from Spain but now based in Colombia. For quite a while now, I’ve been working remotely with a talented team of developers at a company based in San Francisco.
-
-// I really enjoy coding and solving real-world problems, and I love building amazing designs while enhancing user experience. I’m flexible and open to learning any tech stack needed to address project requirements.
-
-// I'm looking forward to contributing my skills and hard work to exciting new projects and teams.
 export default AboutMe
