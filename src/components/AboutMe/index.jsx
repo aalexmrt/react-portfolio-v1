@@ -12,21 +12,29 @@ const AboutMe = () => {
           Hi, I{"'"}m <strong>Alex Martinez!</strong> 👋
         </h3>
         <p className="text-xl md:text-2xl">
-          I develop websites for various purposes using technologies like
-          React.js, Express.js, Tailwind, PostgreSQL, Python and more.
+          I’m a full-stack developer with over 3 years of experience in the tech
+          industry, originally from Spain but now based in Colombia. Recently,
+          I’ve been working remotely with a talented team of developers at a
+          company based in San Francisco.
         </p>
         <p className="text-xl md:text-2xl">
-          Over 3+ years of experience in which I have built tools to improve and
-          automate processes, delivering efficient solutions and attractive
-          graphical interfaces.
+          I really enjoy coding and solving real-world problems, and I love
+          building amazing designs while enhancing user experience. I’m flexible
+          and open to learning any tech stack needed to address the requirements
+          of the project.
         </p>
         <p className="text-xl md:text-2xl">
-          I graduated in Web Development and I have continued to develop my
-          skills through online courses and building personal projects.
+          I{"'"}m looking forward to contributing my skills and hard work to
+          exciting new projects and teams.
         </p>
       </div>
     </section>
   )
 }
 
+// I’m a full-stack developer with over 3 years of experience, originally from Spain but now based in Colombia. For quite a while now, I’ve been working remotely with a talented team of developers at a company based in San Francisco.
+
+// I really enjoy coding and solving real-world problems, and I love building amazing designs while enhancing user experience. I’m flexible and open to learning any tech stack needed to address project requirements.
+
+// I'm looking forward to contributing my skills and hard work to exciting new projects and teams.
 export default AboutMe
