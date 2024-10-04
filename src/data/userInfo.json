@@ -1,25 +1,30 @@
 {
-  "greeting": " Hi, I'm Alex Martinez",
-  "title": "Full Stack Developer ",
+  "greeting": "Hi, I'm Alex Martinez",
+  "title": "Full Stack Developer",
   "description": "Building Tomorrow's Web Today",
   "skills": [
     {
-      "name": "React",
-      "icon": "skills-icons/react.svg",
-      "linkInfo": "https://react.dev/"
+      "name": "Next.js",
+      "icon": "skills-icons/nextjs.svg",
+      "linkInfo": "https://nextjs.org/"
     },
     {
-      "name": "Javascript",
-      "icon": "skills-icons/javascript.svg",
-      "linkInfo": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      "name": "TypeScript",
+      "icon": "skills-icons/typescript.svg",
+      "linkInfo": "https://www.typescriptlang.org/"
     },
     {
-      "name": "Tailwindcss",
+      "name": "Tailwind",
       "icon": "skills-icons/tailwind.svg",
       "linkInfo": "https://tailwindcss.com/"
     },
     {
-      "name": "NodeJS",
+      "name": "Bootstrap",
+      "icon": "skills-icons/bootstrap.svg",
+      "linkInfo": "https://getbootstrap.com/"
+    },
+    {
+      "name": "Node.js",
       "icon": "skills-icons/nodejs.svg",
       "linkInfo": "https://nodejs.org/en"
     },
@@ -29,9 +34,14 @@
       "linkInfo": "https://www.python.org/"
     },
     {
-      "name": "Git",
-      "icon": "skills-icons/git.svg",
-      "linkInfo": "https://git-scm.com/"
+      "name": "PostgreSQL",
+      "icon": "skills-icons/postgresql.svg",
+      "linkInfo": "https://www.postgresql.org/"
+    },
+    {
+      "name": "AWS",
+      "icon": "skills-icons/aws.svg",
+      "linkInfo": "https://aws.amazon.com/"
     },
     {
       "name": "Docker",
@@ -39,19 +49,9 @@
       "linkInfo": "https://www.docker.com/"
     },
     {
-      "name": "Typescript",
-      "icon": "skills-icons/typescript.svg",
-      "linkInfo": "https://www.typescriptlang.org/"
-    },
-    {
-      "name": "Bash",
-      "icon": "skills-icons/bash.svg",
-      "linkInfo": "https://www.gnu.org/software/bash/"
-    },
-    {
-      "name": "Bootstrap",
-      "icon": "skills-icons/bootstrap.svg",
-      "linkInfo": "https://getbootstrap.com/"
+      "name": "Kubernetes",
+      "icon": "skills-icons/kubernetes.svg",
+      "linkInfo": "https://kubernetes.io/"
     }
   ]
 }
