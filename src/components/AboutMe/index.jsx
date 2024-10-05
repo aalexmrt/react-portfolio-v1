@@ -24,8 +24,7 @@ const AboutMe = () => {
           of the project.
         </p>
         <p className="text-xl md:text-2xl">
-          I{"'"}m looking forward to contributing my skills and hard work to
-          exciting new projects and teams.
+          I{"'"}m looking forward to work on exciting projects and teams.
         </p>
       </div>
     </section>
