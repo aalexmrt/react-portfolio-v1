@@ -13,18 +13,20 @@ const AboutMe = () => {
         </h3>
         <p className="text-xl md:text-2xl">
           I’m a full-stack developer with over 3 years of experience in the tech
-          industry, originally from Spain but now based in Colombia. Recently,
-          I’ve been working remotely with a talented team of developers at a
-          company based in San Francisco.
+          industry, originally from Spain but now based in Colombia.
+        </p>
+        <p className="text-xl md:text-2xl">
+          Recently, I’ve been working remotely with a talented team of
+          developers at a company based in San Francisco.
         </p>
         <p className="text-xl md:text-2xl">
           I really enjoy coding and solving real-world problems, and I love
-          building amazing designs while enhancing user experience. I’m flexible
-          and open to learning any tech stack needed to address the requirements
-          of the project.
+          building amazing designs while enhancing user experience.
         </p>
         <p className="text-xl md:text-2xl">
-          I{"'"}m looking forward to work on exciting projects and teams.
+          I’m flexible and open to learning any tech stack needed to address the
+          requirements of the project. I{"'"}m looking forward to work on
+          exciting projects and teams.
         </p>
       </div>
     </section>
