@@ -1,4 +1,4 @@
-import profileImg from "src/assets/profile.jpeg"
+import profileImg from "src/assets/profile.webp"
 import "./index.css"
 const AboutMe = () => {
   return (
