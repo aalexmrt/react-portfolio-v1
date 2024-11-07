@@ -12,7 +12,7 @@ const AboutMe = () => {
           Hi, I{"'"}m <strong>Alex Martinez!</strong> 👋
         </h3>
         <p className="text-xl md:text-2xl">
-          I’m a full-stack developer with over 3 years of experience in the tech
+          I’m a full-stack engineer with over 3 years of experience in the tech
           industry, originally from Spain but now based in Colombia.
         </p>
         <p className="text-xl md:text-2xl">
