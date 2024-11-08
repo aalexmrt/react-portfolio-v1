@@ -27,7 +27,6 @@ export const Hero = () => {
       <div className="memoji">
         <img src={workingEmoji}></img>
       </div>
-      <h2 className="subtitle">{description}</h2>
       <SkillsIcons />
     </motion.section>
   )
