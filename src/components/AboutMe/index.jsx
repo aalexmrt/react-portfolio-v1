@@ -19,7 +19,7 @@ const AboutMe = () => {
         </p>
         <p className="text-xl md:text-2xl">
           I really enjoy coding and solving real-world problems, and I love
-          building amazing designs while enhancing user experience.
+          building amazing designs while enhancing user experiences.
         </p>
         <p className="text-xl md:text-2xl">
           I{"'"}m versatile and ready to work with the technologies that best
