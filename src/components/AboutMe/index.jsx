@@ -22,8 +22,8 @@ const AboutMe = () => {
           building amazing designs while enhancing user experience.
         </p>
         <p className="text-xl md:text-2xl">
-          I’m versatile and ready to work with the technologies that best align
-          with each project’s needs.
+          I{"'"}m versatile and ready to work with the technologies that best
+          align with each project{"'"}s needs.
         </p>
       </div>
     </section>
