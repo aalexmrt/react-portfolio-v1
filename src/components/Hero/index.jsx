@@ -22,7 +22,7 @@ export const Hero = () => {
       id="home"
     >
       <h1 className="title">
-        Full Stack <span className="text-[var(--accent-color)]">Engineer</span>{" "}
+        Full Stack <span className="text-[var(--accent-color)]">Engineer</span>
       </h1>
       <div className="memoji">
         <img src={workingEmoji}></img>

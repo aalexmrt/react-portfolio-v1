@@ -12,21 +12,17 @@ const AboutMe = () => {
           Hi, I{"'"}m <strong>Alex Martinez!</strong> 👋
         </h3>
         <p className="text-xl md:text-2xl">
-          I’m a full-stack engineer with over 3 years of experience in the tech
-          industry, originally from Spain but now based in Colombia.
-        </p>
-        <p className="text-xl md:text-2xl">
-          Recently, I’ve been working remotely with a talented team of
-          developers at a company based in San Francisco.
+          I’m a Full-Stack Engineer. I have experience working in early-stage
+          startups and have worked with a variety of technologies including
+          JavaScript, React, Node.js, and Python.
         </p>
         <p className="text-xl md:text-2xl">
           I really enjoy coding and solving real-world problems, and I love
           building amazing designs while enhancing user experience.
         </p>
         <p className="text-xl md:text-2xl">
-          I’m flexible and open to learning any tech stack needed to address the
-          requirements of the project. I{"'"}m looking forward to work on
-          exciting projects and teams.
+          I’m versatile and ready to work with the technologies that best align
+          with each project’s needs.
         </p>
       </div>
     </section>
