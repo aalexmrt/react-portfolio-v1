@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App.jsx"
@@ -8,6 +9,7 @@ import ScrollToTop from "./utils/ScrollToTop"
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <ScrollToTop />
+    <Analytics />
     <App />
   </BrowserRouter>,
 )

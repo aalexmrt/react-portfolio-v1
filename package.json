@@ -15,6 +15,7 @@
     "@motionone/utils": "^10.15.1",
     "@notionhq/client": "2.2.11",
     "@supabase/supabase-js": "^2.33.1",
+    "@vercel/analytics": "^1.4.0",
     "apollo-client": "2.6.10",
     "emailjs": "4.0.2",
     "framer-motion": "^10.16.4",
